@@ -1,5 +1,15 @@
 To recreate and expand this concept into a more fully-fledged game suitable for a Steam release using Godot 4, you could consider the following approach:
 
+Ideas:
+- Age of Empires style
+- Mod support
+- Mushroom theme
+- You are the prince of a mushroom kingdom which was taken by a dragon, you must rebuild with your 13 mushrooms
+- Different speices of mushrooms for other factions (Elves, Hobbits, Orks, etc)
+https://opengameart.org/content/barricades-stone-and-wood
+https://opengameart.org/content/iso-rpg-concept
+https://opengameart.org/users/rubberduck
+
 Core Mechanics:
 
 Implement a grid-based placement system for village elements
@@ -52,5 +62,55 @@ Implement a screenshot or sharing feature
 Create multiple biomes or themes for variety
 
 
+Claude:
+	Mushroom-themed factions:
+3-4 distinct mushroom civilizations with unique units and abilities
+Each faction could represent different types of mushrooms (e.g., saprophytic, mycorrhizal, parasitic)
+
+Resource management:
+Gather resources like spores, water, and organic matter
+Manage mycelium networks for resource transportation
+
+Base building:
+Construct mushroom-themed buildings (e.g., spore towers, mycelium networks)
+Upgrade structures to unlock new units and technologies
+
+Unit production and combat:
+Create various mushroom-themed units (e.g., spore launchers, mycelium runners)
+Basic combat system with rock-paper-scissors style counters
+
+Technology tree:
+Simplified tech tree compared to AoE II, but still offering meaningful choices
+Upgrades focused on improving economy, military, and unique faction abilities
+
+Single-player content:
+Campaign mode with 5-8 missions introducing game mechanics and story
+Skirmish mode against AI opponents
+
+Multiplayer:
+Basic multiplayer functionality for 2-4 players
+Simple matchmaking system
+
+User Interface:
+Clean, intuitive UI inspired by classic RTS games but with a mushroom theme
+Tutorial system to introduce core mechanics
+
+Graphics and sound:
+Stylized, charming mushroom-themed art style (doesn't need to be AAA quality)
+Basic sound effects and background music
+
+Map variety:
+4-6 different map types (e.g., forest floor, cave systems, compost heap)
+Random map generation for replayability
+
+Win conditions:
+Standard RTS win conditions (e.g., destroy enemy base, control specific points)
+Potentially unique mushroom-themed objectives
+
+Mod support:
+Basic mod support to extend game lifespan and community engagement
+
+Performance optimization:
+Ensure the game runs smoothly on a wide range of PC configurations
 
 To make it worth $2.99 on Steam, focus on creating a polished, bug-free experience with enough content and depth to keep players engaged for several hours. Consider adding Steam achievements, cloud saves, and potentially workshop support for user-created content.
