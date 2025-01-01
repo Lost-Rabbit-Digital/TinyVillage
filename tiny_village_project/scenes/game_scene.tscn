@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://pshxywf8lfgj"]
+
+[ext_resource type="FontFile" uid="uid://cp7e3etd5igwr" path="res://assets/sagesans-Regular.ttf" id="1_w5aja"]
+
+[node name="GameScene" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_right = 984.0
+offset_bottom = 294.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_w5aja")
+theme_override_font_sizes/font_size = 71
+text = "(there is no game yet...)
+"
+editable = false
+context_menu_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+empty_selection_clipboard_enabled = false
+caret_move_on_right_click = false
+caret_multiple = false
+use_default_word_separators = false
