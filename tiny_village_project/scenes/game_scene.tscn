@@ -1,16 +1,7 @@
-[gd_scene format=3 uid="uid://pshxywf8lfgj"]
+[gd_scene load_steps=2 format=3 uid="uid://pshxywf8lfgj"]
+
+[ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="1_w5aja"]
 
 [node name="GameScene" type="Node2D"]
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 1280.0
-offset_bottom = 720.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
-layout_mode = 2
-color = Color(1, 0.886275, 0.403922, 0.772549)
+[node name="WindowFrame" parent="." instance=ExtResource("1_w5aja")]
