@@ -15,7 +15,9 @@ config/description="A doodle-themed drag and drop sandbox game based around a ti
 config/version="1.0.0"
 run/main_scene="uid://c63y6b25bs4bk"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://assets/game.ico"
+config/icon="uid://vnh5mc8xfkew"
+config/macos_native_icon="res://assets/icon_mac.icns"
+config/windows_native_icon="res://assets/icon_windows.ico"
 
 [autoload]
 
@@ -26,8 +28,8 @@ ProjectUISoundController="*res://addons/maaacks_menus_template/base/scenes/autol
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=640
+window/size/viewport_height=480
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
@@ -43,3 +45,10 @@ locale/translations=PackedStringArray("res://addons/maaacks_menus_template/base/
 [maaacks_menus_template]
 
 disable_plugin_dialogues=true
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+textures/lossless_compression/force_png=true
+textures/decals/filter=0
+textures/light_projectors/filter=0
