@@ -1,9 +1,8 @@
 # Attribution
 ## Programmers
 ### Lead Programmer
-Author: [Marek Belski](https://github.com/Maaack/Godot-Menus-Template/graphs/contributors)  
-Source: [Dafont: Sage-Sans](https://www.dafont.com/sage-sans.font?l[]=10)  
-License: [OFL License](https://opensource.org/license/ofl-1-1)
+Author: [Boden McHale](https://github.com/Maaack/Godot-Menus-Template/graphs/contributors)  
+Source: [Website](https://www.bodenmchale.com/)  
 
 
 ## Graphics
