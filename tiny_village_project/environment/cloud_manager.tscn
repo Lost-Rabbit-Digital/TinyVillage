@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgxokr08s7v1n"]
+
+[ext_resource type="Script" uid="uid://e3y0ffdruo3k" path="res://environment/scripts/cloud_manager.gd" id="1_3mq5d"]
+
+[node name="CloudManager" type="Node"]
+script = ExtResource("1_3mq5d")

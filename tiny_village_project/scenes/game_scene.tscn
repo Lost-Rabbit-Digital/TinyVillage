@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://pshxywf8lfgj"]
+[gd_scene load_steps=4 format=3 uid="uid://pshxywf8lfgj"]
 
 [ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="1_w5aja"]
 [ext_resource type="PackedScene" uid="uid://c0nu5tpvlg8sh" path="res://user_interface/background_color_manager.tscn" id="2_onqr8"]
+[ext_resource type="PackedScene" uid="uid://bgxokr08s7v1n" path="res://environment/cloud_manager.tscn" id="3_ycayy"]
 
 [node name="GameScene" type="AspectRatioContainer"]
 anchors_preset = 15
@@ -14,3 +15,5 @@ grow_vertical = 2
 layout_mode = 2
 
 [node name="BackgroundColorManager" parent="." instance=ExtResource("2_onqr8")]
+
+[node name="CloudManager" parent="." instance=ExtResource("3_ycayy")]
