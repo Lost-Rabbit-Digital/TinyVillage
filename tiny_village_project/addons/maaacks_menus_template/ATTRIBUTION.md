@@ -8,8 +8,14 @@ Source: [Website](https://www.bodenmchale.com/)
 ## Graphics
 ### Font
 Author: [Sage](https://www.dafont.com/sage.d7729?l[]=10)  
-Source: [Dafont: Sage-Sans](https://www.dafont.com/sage-sans.font?l[]=10)  
+Source: [Sage Sans](https://www.dafont.com/sage-sans.font?l[]=10)  
 License: [OFL License](https://opensource.org/license/ofl-1-1)
+
+## Audio
+### Music
+Author: [Sage](https://www.dafont.com/sage.d7729?l[]=10)  
+Source: [OpenGameArt: Sage-Sans](https://www.dafont.com/sage-sans.font?l[]=10)  
+License: [CC0 License](https://creativecommons.org/public-domain/cc0/)
 
 
 ## Tools
