@@ -9,5 +9,12 @@ Ideas:
 - Gather resources with lil dudes
 
 Graphics:
-- 3D
+- 2D
 - Isometric perspective
+
+GitHub:
+- Add README.md
+
+Completed Tasks:
+- Update credits.md to ATRRIBUTION.md
+- remove .vscode
