@@ -13,7 +13,7 @@ A cozy village-building simulator where you create your own procedurally-generat
 - Arrow keys: Adjust background warmth/brightness
 
 ## License
-LICENSE.md
+[LICENSE.md](LICENSE.md)
 
 ## Credits
 [ATTRIBUTION.md](tiny_village_project/addons/maaacks_menus_template/examples/ATTRIBUTION.md)
