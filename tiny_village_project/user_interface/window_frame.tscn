@@ -18,6 +18,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+[node name="WindowBorderTexture" type="TextureRect" parent="MarginContainer"]
 layout_mode = 2
 texture = ExtResource("1_wf57l")

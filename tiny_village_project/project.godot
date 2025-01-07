@@ -52,3 +52,4 @@ textures/canvas_textures/default_texture_filter=0
 textures/lossless_compression/force_png=true
 textures/decals/filter=0
 textures/light_projectors/filter=0
+environment/defaults/default_clear_color=Color(0.984314, 0.941176, 0.85098, 1)

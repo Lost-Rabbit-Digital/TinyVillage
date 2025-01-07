@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0nu5tpvlg8sh"]
+
+[ext_resource type="Script" uid="uid://buhyqrmybnf0w" path="res://user_interface/scripts/background_color_manager.gd" id="1_5hd0v"]
+
+[node name="BackgroundColorManager" type="Node"]
+script = ExtResource("1_5hd0v")
