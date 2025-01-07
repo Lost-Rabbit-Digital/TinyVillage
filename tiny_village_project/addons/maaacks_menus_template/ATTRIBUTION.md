@@ -6,8 +6,8 @@ Source: [Website](https://www.bodenmchale.com/)
 
 
 ## Graphics
-### Sage Sans
-Author: [Marek Belski](https://github.com/Maaack/Godot-Menus-Template/graphs/contributors)  
+### Font
+Author: [Sage](https://www.dafont.com/sage.d7729?l[]=10)  
 Source: [Dafont: Sage-Sans](https://www.dafont.com/sage-sans.font?l[]=10)  
 License: [OFL License](https://opensource.org/license/ofl-1-1)
 
