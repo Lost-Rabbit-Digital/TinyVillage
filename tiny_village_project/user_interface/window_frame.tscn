@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bflh4tksqura8"]
+[gd_scene load_steps=3 format=3 uid="uid://bflh4tksqura8"]
 
 [ext_resource type="Texture2D" uid="uid://dhf3drxqfw5qy" path="res://assets/window_borders/window_border_1.png" id="1_wf57l"]
+[ext_resource type="Script" uid="uid://k2o6y2od6um6" path="res://user_interface/scripts/window_border_manager.gd" id="2_na2np"]
 
 [node name="WindowFrame" type="MarginContainer"]
 anchors_preset = 15
@@ -12,3 +13,4 @@ grow_vertical = 2
 [node name="WindowBorderTexture" type="TextureRect" parent="."]
 layout_mode = 2
 texture = ExtResource("1_wf57l")
+script = ExtResource("2_na2np")
