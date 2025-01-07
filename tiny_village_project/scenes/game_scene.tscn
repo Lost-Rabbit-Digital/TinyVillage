@@ -14,4 +14,3 @@ grow_vertical = 2
 layout_mode = 2
 
 [node name="BackgroundColorManager" parent="." instance=ExtResource("2_onqr8")]
-layout_mode = 2

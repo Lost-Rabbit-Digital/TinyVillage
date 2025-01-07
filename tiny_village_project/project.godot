@@ -31,7 +31,6 @@ ProjectUISoundController="*res://addons/maaacks_menus_template/base/scenes/autol
 window/size/viewport_width=640
 window/size/viewport_height=480
 window/stretch/mode="viewport"
-window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
 
 [editor_plugins]
