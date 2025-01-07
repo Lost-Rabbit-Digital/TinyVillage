@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhwvdjg8ote2f"
-path="res://.godot/imported/default_palette.png-97f7b85c7a772e1b9501c78a7343e5fc.ctex"
+uid="uid://yeaxopq7u7vq"
+path="res://.godot/imported/cloud_shadow_7.png-1f3bf8118af5cdddd90e371ade57f840.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/default_palette.png"
-dest_files=["res://.godot/imported/default_palette.png-97f7b85c7a772e1b9501c78a7343e5fc.ctex"]
+source_file="res://assets/cloud_shadows/cloud_shadow_7.png"
+dest_files=["res://.godot/imported/cloud_shadow_7.png-1f3bf8118af5cdddd90e371ade57f840.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhwvdjg8ote2f"
-path="res://.godot/imported/default_palette.png-97f7b85c7a772e1b9501c78a7343e5fc.ctex"
+uid="uid://dc7wi2pgk03hg"
+path="res://.godot/imported/bridge_button_2.png-ed9c132c0cd44faa44121cbf4e243311.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/default_palette.png"
-dest_files=["res://.godot/imported/default_palette.png-97f7b85c7a772e1b9501c78a7343e5fc.ctex"]
+source_file="res://assets/buttons/bridge_button_2.png"
+dest_files=["res://.godot/imported/bridge_button_2.png-ed9c132c0cd44faa44121cbf4e243311.ctex"]
 
 [params]
 

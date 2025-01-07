@@ -15,7 +15,7 @@ config/description="A doodle-themed drag and drop sandbox game based around a ti
 config/version="1.0.0"
 run/main_scene="uid://c63y6b25bs4bk"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="uid://bhselm7sk8e5o"
+config/icon="res://assets/game.ico"
 
 [autoload]
 

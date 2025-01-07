@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhwvdjg8ote2f"
-path="res://.godot/imported/default_palette.png-97f7b85c7a772e1b9501c78a7343e5fc.ctex"
+uid="uid://cf2hmvci2x2cr"
+path="res://.godot/imported/road_button_1.png-16c89dc8b85c0cc894e3c2004e250ba5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/default_palette.png"
-dest_files=["res://.godot/imported/default_palette.png-97f7b85c7a772e1b9501c78a7343e5fc.ctex"]
+source_file="res://assets/buttons/road_button_1.png"
+dest_files=["res://.godot/imported/road_button_1.png-16c89dc8b85c0cc894e3c2004e250ba5.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://pshxywf8lfgj"]
 
-[ext_resource type="FontFile" uid="uid://cp7e3etd5igwr" path="res://assets/sagesans-Regular.ttf" id="1_w5aja"]
+[ext_resource type="FontFile" uid="uid://cp7e3etd5igwr" path="res://assets/sage_sans/sagesans-Regular.ttf" id="1_w5aja"]
 
 [node name="GameScene" type="Node2D"]
 
