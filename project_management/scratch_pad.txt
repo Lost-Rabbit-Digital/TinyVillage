@@ -11,5 +11,8 @@ Ideas:
 - Multiplayer
 - Romance/Cute: Inspirations include It Takes Two and A Way Out
 - Story driven win condition
+- Zen-Management game
+- Civilisation simulator 
+- Gather resources with lil dudes
 
 To-do:

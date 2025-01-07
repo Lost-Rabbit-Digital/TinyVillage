@@ -1,9 +1,13 @@
 # Attribution
-## Collaborators
+## Programmers
+### Lead Programmer
+Author: [Marek Belski](https://github.com/Maaack/Godot-Menus-Template/graphs/contributors)  
+Source: [Dafont: Sage-Sans](https://www.dafont.com/sage-sans.font?l[]=10)  
+License: [OFL License](https://opensource.org/license/ofl-1-1)
 
-## Sage Sans
 
-### Godot Menus Template
+## Graphics
+### Sage Sans
 Author: [Marek Belski](https://github.com/Maaack/Godot-Menus-Template/graphs/contributors)  
 Source: [Dafont: Sage-Sans](https://www.dafont.com/sage-sans.font?l[]=10)  
 License: [OFL License](https://opensource.org/license/ofl-1-1)
@@ -29,4 +33,3 @@ License: [MIT License](https://github.com/microsoft/vscode/blob/main/LICENSE.txt
 Author: [Linus Torvalds](https://github.com/torvalds)  
 Source: [git-scm.com](https://git-scm.com/downloads)  
 License: [GNU General Public License version 2](https://opensource.org/licenses/GPL-2.0)
-
