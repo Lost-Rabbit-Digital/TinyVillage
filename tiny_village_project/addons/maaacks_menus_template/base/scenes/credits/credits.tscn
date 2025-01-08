@@ -12,10 +12,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("4")
 attribution_file_path = ""
-h1_font_size = 64
-h2_font_size = 48
-h3_font_size = 32
-h4_font_size = 24
+h1_font_size = 84
+h2_font_size = 72
+h3_font_size = 48
+h4_font_size = 36
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 0
