@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://c6k5nnpbypshi"]
 
-[ext_resource type="Script" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/main_menu.gd" id="1"]
+[ext_resource type="Script" uid="uid://bwjx01la8t87w" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/main_menu.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://hmx6o472ropw" path="res://addons/maaacks_menus_template/base/scenes/menus/options_menu/master_options_menu_with_tabs.tscn" id="2_qvrrd"]
 [ext_resource type="PackedScene" uid="uid://t2dui8ppm3a4" path="res://addons/maaacks_menus_template/base/scenes/credits/credits.tscn" id="3_5dhvp"]
-[ext_resource type="Script" path="res://addons/maaacks_menus_template/base/scripts/capture_focus.gd" id="4_l1ebe"]
+[ext_resource type="Script" uid="uid://d2gcetllheeqk" path="res://addons/maaacks_menus_template/base/scripts/capture_focus.gd" id="4_l1ebe"]
 [ext_resource type="PackedScene" uid="uid://bkcsjsk2ciff" path="res://addons/maaacks_menus_template/base/scenes/music_players/background_music_player.tscn" id="4_w8sbm"]
-[ext_resource type="Script" path="res://addons/maaacks_menus_template/base/scripts/ui_sound_controller.gd" id="6_bs342"]
-[ext_resource type="Script" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/config_version_label.gd" id="6_pdiij"]
-[ext_resource type="Script" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/config_name_label.gd" id="7_j7612"]
+[ext_resource type="Script" uid="uid://dbiu3v6re4pnm" path="res://addons/maaacks_menus_template/base/scripts/ui_sound_controller.gd" id="6_bs342"]
+[ext_resource type="Script" uid="uid://38sha1rn27yd" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/config_version_label.gd" id="6_pdiij"]
+[ext_resource type="Script" uid="uid://cng0wnntkqoc6" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/config_name_label.gd" id="7_j7612"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -24,6 +24,7 @@ credits_packed_scene = ExtResource("3_5dhvp")
 script = ExtResource("6_bs342")
 
 [node name="BackgroundMusicPlayer" parent="." instance=ExtResource("4_w8sbm")]
+bus = &"Master"
 
 [node name="BackgroundTextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -62,7 +63,7 @@ offset_left = -88.0
 offset_top = -26.0
 grow_horizontal = 0
 grow_vertical = 0
-text = "v0.0.0"
+text = "v1.0.0"
 horizontal_alignment = 2
 script = ExtResource("6_pdiij")
 
@@ -90,7 +91,7 @@ anchor_right = 1.0
 offset_bottom = 67.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 48
-text = "Title"
+text = "Tiny Village"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("7_j7612")

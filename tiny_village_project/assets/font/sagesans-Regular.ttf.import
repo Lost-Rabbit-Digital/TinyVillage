@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cp7e3etd5igwr"
-path="res://.godot/imported/sagesans-Regular.ttf-af315a6ebeb438d93abd3af612bead30.fontdata"
+path="res://.godot/imported/sagesans-Regular.ttf-1a2e386781ccda34c2d4f893ee0a7a37.fontdata"
 
 [deps]
 
-source_file="res://assets/sage_sans/sagesans-Regular.ttf"
-dest_files=["res://.godot/imported/sagesans-Regular.ttf-af315a6ebeb438d93abd3af612bead30.fontdata"]
+source_file="res://assets/font/sagesans-Regular.ttf"
+dest_files=["res://.godot/imported/sagesans-Regular.ttf-1a2e386781ccda34c2d4f893ee0a7a37.fontdata"]
 
 [params]
 
