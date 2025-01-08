@@ -383,8 +383,10 @@ texture_filter = 1
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 24
+text = "Version 1.0.0"
 
 [node name="MenuContainer" parent="." index="6"]
 theme = ExtResource("2_mvgsf")
@@ -398,11 +400,13 @@ theme = ExtResource("2_mvgsf")
 
 [node name="TitleLabel" parent="MenuContainer/TitleMargin/TitleContainer" index="0"]
 texture_filter = 1
+offset_bottom = 77.0
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 84
 
 [node name="SubTitleMargin" parent="MenuContainer" index="1"]
 theme = ExtResource("2_mvgsf")
@@ -413,12 +417,17 @@ theme = ExtResource("2_mvgsf")
 
 [node name="SubTitleLabel" parent="MenuContainer/SubTitleMargin/SubTitleContainer" index="0"]
 texture_filter = 1
+anchors_preset = -1
+anchor_top = 0.0592949
+anchor_bottom = 0.0592949
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 48
 text = "Where Little Dreams Grow"
+metadata/_edit_use_anchors_ = true
 
 [node name="MenuButtonsMargin" parent="MenuContainer" index="2"]
 theme = ExtResource("2_mvgsf")
@@ -436,8 +445,9 @@ texture_filter = 1
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 36
 
 [node name="ContinueGameButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="1"]
 unique_name_in_owner = true
@@ -448,8 +458,9 @@ layout_mode = 2
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 36
 text = "Continue"
 
 [node name="OptionsButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="2"]
@@ -457,8 +468,9 @@ texture_filter = 1
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 36
 text = "Options"
 
 [node name="CreditsButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="3"]
@@ -466,16 +478,18 @@ texture_filter = 1
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 36
 
 [node name="ExitButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="4"]
 texture_filter = 1
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 36
 
 [node name="OptionsContainer" parent="." index="7"]
 theme = ExtResource("2_mvgsf")
@@ -494,7 +508,7 @@ texture_filter = 1
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_outline_color = Color(0.109804, 0.105882, 0.133333, 1)
 theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
-theme_override_constants/outline_size = 6
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
 
 [connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/ContinueGameButton" to="." method="_on_continue_game_button_pressed"]

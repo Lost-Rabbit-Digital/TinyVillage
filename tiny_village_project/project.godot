@@ -31,7 +31,7 @@ ProjectUISoundController="*res://addons/maaacks_menus_template/base/scenes/autol
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="viewport"
-window/stretch/scale_mode="integer"
+window/stretch/aspect="keep_width"
 
 [editor_plugins]
 
@@ -51,4 +51,4 @@ textures/canvas_textures/default_texture_filter=0
 textures/lossless_compression/force_png=true
 textures/decals/filter=0
 textures/light_projectors/filter=0
-environment/defaults/default_clear_color=Color(0.984314, 0.941176, 0.85098, 1)
+environment/defaults/default_clear_color=Color(0.878431, 0.764706, 0.517647, 1)
