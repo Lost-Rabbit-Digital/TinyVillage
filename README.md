@@ -2,6 +2,8 @@
 
 A cozy village-building simulator where you create your own procedurally-generated settlements. Build unique villages by placing roads, houses, and decorative elements in an isometric world.
 
+![Main Menu](project_management/screenshots/main_menu_screenshot.png)
+
 ## Features
 - Relaxing isometric art style
 - Dynamic backgrounds with adjustable warmth/brightness
