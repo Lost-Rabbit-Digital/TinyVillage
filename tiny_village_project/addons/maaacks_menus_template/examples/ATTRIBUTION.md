@@ -6,8 +6,8 @@ Website: [BodenMcHale.com](https://www.bodenmchale.com/)
 
 ## Visuals
 ### Font
-Author: [Sage](https://www.dafont.com/sage.d7729?l[]=10)  
-Source: [Sage Sans](https://www.dafont.com/sage-sans.font?l[]=10)  
+Author: [Sage](https://www.dafont.com/sage.d7729)  
+Source: [Sage Sans](https://www.dafont.com/sage-sans.font)  
 License: [OFL](https://opensource.org/license/ofl-1-1)
 
 ## Audio
