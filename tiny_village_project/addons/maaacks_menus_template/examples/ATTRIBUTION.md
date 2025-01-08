@@ -71,7 +71,7 @@
 
 
 
-## Memoriom
+## Memoriam
 #### GNU Michael McHale
 #### GNU Sherri Jackson
 
