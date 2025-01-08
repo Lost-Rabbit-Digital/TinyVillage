@@ -1,0 +1,6 @@
+Basic To-do list full of tasks
+
+Settings Menu:
+- Add an option to toggle the window border
+
+Completed Tasks:

@@ -2,7 +2,7 @@ extends TextureRect
 
 var animation = {
 	"timer": 0.0,
-	"rate": 0.30,
+	"rate": 0.70,
 	"current_frame": 0,
 	"frames": []
 }
