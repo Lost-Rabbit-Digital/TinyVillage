@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bm7iies4wqn36" path="res://assets/menu_icons/tree_icon.png" id="2_647hw"]
 [ext_resource type="Texture2D" uid="uid://dqotsxny0f6ob" path="res://assets/menu_icons/water_icon.png" id="3_k8gvg"]
 
-[node name="SpawnButtons" type="MarginContainer"]
+[node name="CreationMenu" type="MarginContainer"]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0

@@ -1,15 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://pshxywf8lfgj"]
 
-[ext_resource type="PackedScene" uid="uid://2ebx5ibed8ew" path="res://user_interface/spawn_buttons.tscn" id="1_bw6k5"]
+[ext_resource type="PackedScene" uid="uid://2ebx5ibed8ew" path="res://user_interface/creation_menu.tscn" id="1_bw6k5"]
 [ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="1_w5aja"]
-[ext_resource type="PackedScene" uid="uid://c0nu5tpvlg8sh" path="res://user_interface/background_color_manager.tscn" id="2_onqr8"]
 [ext_resource type="PackedScene" uid="uid://bgxokr08s7v1n" path="res://environment/cloud_manager.tscn" id="3_ycayy"]
+[ext_resource type="Material" uid="uid://c33shy2j4hq06" path="res://environment/shaders/grass_generation.tres" id="4_bw6k5"]
 
 [node name="GameScene" type="AspectRatioContainer"]
 offset_right = 1280.0
 offset_bottom = 720.0
-
-[node name="BackgroundColorManager" parent="." instance=ExtResource("2_onqr8")]
 
 [node name="CloudManager" parent="." instance=ExtResource("3_ycayy")]
 
@@ -18,7 +16,13 @@ layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 
-[node name="SpawnButtons" parent="." instance=ExtResource("1_bw6k5")]
+[node name="CreationMenu" parent="." instance=ExtResource("1_bw6k5")]
 custom_minimum_size = Vector2(128, 32)
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Background" type="ColorRect" parent="."]
+material = ExtResource("4_bw6k5")
+layout_mode = 2
+color = Color(0.73267, 0.787441, 0.527657, 1)
