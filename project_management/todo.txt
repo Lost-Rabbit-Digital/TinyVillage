@@ -7,6 +7,6 @@ Main Tasks:
 - Setup spawn buttons
 - Setup pickup/drag interaction
 - Setup sound effects
-- 
+- Drop-down menu for spawn categories 
 
 Completed Tasks:

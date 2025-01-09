@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://2ebx5ibed8ew"]
+
+[ext_resource type="Texture2D" uid="uid://c0n40bi7k86tx" path="res://assets/menu_icons/bush_icon.png" id="1_kurkn"]
+[ext_resource type="Texture2D" uid="uid://bm7iies4wqn36" path="res://assets/menu_icons/tree_icon.png" id="2_647hw"]
+[ext_resource type="Texture2D" uid="uid://dqotsxny0f6ob" path="res://assets/menu_icons/water_icon.png" id="3_k8gvg"]
+
+[node name="SpawnButtons" type="MarginContainer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -70.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Bushes"
+popup/item_0/icon = ExtResource("1_kurkn")
+popup/item_0/id = 0
+popup/item_1/text = "Tress"
+popup/item_1/icon = ExtResource("2_647hw")
+popup/item_1/id = 1
+popup/item_2/text = "Water"
+popup/item_2/icon = ExtResource("3_k8gvg")
+popup/item_2/id = 2
