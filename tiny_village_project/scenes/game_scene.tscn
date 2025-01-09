@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://pshxywf8lfgj"]
+[gd_scene load_steps=5 format=3 uid="uid://pshxywf8lfgj"]
 
 [ext_resource type="PackedScene" uid="uid://2ebx5ibed8ew" path="res://user_interface/creation_menu.tscn" id="1_bw6k5"]
 [ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="1_w5aja"]
+[ext_resource type="PackedScene" uid="uid://c0nu5tpvlg8sh" path="res://user_interface/background_color_manager.tscn" id="2_onqr8"]
 [ext_resource type="PackedScene" uid="uid://bgxokr08s7v1n" path="res://environment/cloud_manager.tscn" id="3_ycayy"]
 
 [node name="GameScene" type="Control"]
@@ -22,16 +23,21 @@ offset_bottom = 720.0
 size_flags_horizontal = 6
 size_flags_vertical = 6
 
-[node name="CreationMenu" parent="." instance=ExtResource("1_bw6k5")]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.082
+anchor_right = 0.082
+anchor_bottom = 0.964
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundColorManager" parent="HBoxContainer" instance=ExtResource("2_onqr8")]
+layout_mode = 2
+
+[node name="CreationMenu" parent="HBoxContainer" instance=ExtResource("1_bw6k5")]
+visible = false
 custom_minimum_size = Vector2(128, 32)
 layout_mode = 2
-anchors_preset = 0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 586.0
-offset_top = 29.0
-offset_right = 714.0
-offset_bottom = 61.0
-size_flags_horizontal = 4
-size_flags_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8

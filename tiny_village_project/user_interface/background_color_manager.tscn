@@ -1,6 +1,58 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0nu5tpvlg8sh"]
+[gd_scene load_steps=4 format=3 uid="uid://c0nu5tpvlg8sh"]
 
 [ext_resource type="Script" uid="uid://buhyqrmybnf0w" path="res://user_interface/scripts/background_color_manager.gd" id="1_5hd0v"]
+[ext_resource type="Theme" uid="uid://cgyr60agclm5y" path="res://assets/default_theme.tres" id="2_7khxp"]
 
-[node name="BackgroundColorManager" type="Node"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7khxp"]
+bg_color = Color(0.333333, 0.466667, 0.458824, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.619608)
+shadow_size = 8
+
+[node name="BackgroundColorManager" type="MarginContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -24.0
+offset_right = 64.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
 script = ExtResource("1_5hd0v")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(128, 48)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme = ExtResource("2_7khxp")
+theme_override_styles/panel = SubResource("StyleBoxFlat_7khxp")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.025
+anchor_right = 0.975
+anchor_bottom = 0.975
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme = ExtResource("2_7khxp")
+theme_override_constants/separation = 11
+alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HSlider2" type="HSlider" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
