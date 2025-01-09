@@ -7,8 +7,8 @@ var cloud_speed = 50.0
 const SPAWN_RATE = 3.0
 const CLOUD_ALPHA = 0.3
 const MAX_ROTATION = 360.0
-const MIN_CLOUD_SPEED = 45.0
-const MAX_CLOUD_SPEED = 55.0
+const MIN_CLOUD_SPEED = 25.0
+const MAX_CLOUD_SPEED = 40.0
 
 func _ready():
 	screen_width = get_viewport().get_visible_rect().size.x
