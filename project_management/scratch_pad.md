@@ -12,6 +12,16 @@ Ideas:
 GitHub:
 - Add README.md
 
+
+Necesse Notes:
+Main Menu:
+- I love the scrolling background of different biomes
+- I like the notice with the early access build, lets me have more bugs
+- I like how many links to social media there are
+- Feedback button
+- Toggle camera pan button
+
+
 Completed Tasks:
 - Update credits.md to ATRRIBUTION.md
 - remove .vscode
