@@ -16,7 +16,13 @@
 #### Source [Sage Sans](https://www.dafont.com/sage-sans.font)  
 #### License [OFL](https://opensource.org/license/ofl-1-1)
 
-
+### Icons
+#### Artist [Mark James](https://github.com/markjames)  
+#### Menus
+#### Source [famfamfam-silk-icons](https://github.com/markjames/famfamfam-silk-icons)  
+#### Flags
+#### Source [famfamfam-flag-icons](https://github.com/markjames/famfamfam-flag-icons)  
+#### License [CC-BY 2.5](https://creativecommons.org/licenses/by/2.5/)
 
 ## Audio
 ### Music

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://2ebx5ibed8ew"]
 
-[ext_resource type="Texture2D" uid="uid://c0n40bi7k86tx" path="res://assets/menu_icons/bush_icon.png" id="1_kurkn"]
-[ext_resource type="Texture2D" uid="uid://bm7iies4wqn36" path="res://assets/menu_icons/tree_icon.png" id="2_647hw"]
-[ext_resource type="Texture2D" uid="uid://dqotsxny0f6ob" path="res://assets/menu_icons/water_icon.png" id="3_k8gvg"]
+[ext_resource type="Texture2D" uid="uid://c0n40bi7k86tx" path="res://assets/icons/bush_icon.png" id="1_kurkn"]
+[ext_resource type="Texture2D" uid="uid://bm7iies4wqn36" path="res://assets/icons/tree_icon.png" id="2_647hw"]
+[ext_resource type="Texture2D" uid="uid://dqotsxny0f6ob" path="res://assets/icons/water_icon.png" id="3_k8gvg"]
 
 [node name="CreationMenu" type="MarginContainer"]
 anchors_preset = 12
