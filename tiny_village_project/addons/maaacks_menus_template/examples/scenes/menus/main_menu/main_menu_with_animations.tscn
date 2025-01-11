@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c63y6b25bs4bk"]
+[gd_scene load_steps=21 format=3 uid="uid://c63y6b25bs4bk"]
 
 [ext_resource type="PackedScene" uid="uid://c6k5nnpbypshi" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/main_menu.tscn" id="1_0i2sc"]
 [ext_resource type="Theme" uid="uid://cgyr60agclm5y" path="res://assets/default_theme.tres" id="2_mvgsf"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://c1g50h2avck3w" path="res://addons/maaacks_menus_template/examples/scenes/credits/credits.tscn" id="4_lwsll"]
 [ext_resource type="FontFile" uid="uid://cp7e3etd5igwr" path="res://assets/font/sagesans-Regular.ttf" id="6_013fh"]
 [ext_resource type="PackedScene" uid="uid://bgxokr08s7v1n" path="res://environment/cloud_manager.tscn" id="6_avwjl"]
-[ext_resource type="Script" uid="uid://d2gcetllheeqk" path="res://addons/maaacks_menus_template/base/scripts/capture_focus.gd" id="8_aruns"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "Intro"
@@ -434,25 +433,22 @@ metadata/_edit_use_anchors_ = true
 
 [node name="MenuButtonsMargin" parent="MenuContainer" index="2"]
 theme = ExtResource("2_mvgsf")
+theme_override_constants/margin_top = 186
 
 [node name="MenuButtonsContainer" parent="MenuContainer/MenuButtonsMargin" index="0"]
 modulate = Color(1, 1, 1, 0)
 theme = ExtResource("2_mvgsf")
 
 [node name="MenuButtonsBoxContainer" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer" index="0"]
+offset_left = -165.5
+offset_top = -227.5
+offset_right = 165.5
+offset_bottom = 227.5
 theme = ExtResource("2_mvgsf")
 theme_override_constants/separation = 4
 lock = true
 
-[node name="NewGameButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="0"]
-texture_filter = 1
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-
-[node name="NewGameButton2" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="1"]
+[node name="ContinueGameButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="0"]
 unique_name_in_owner = true
 texture_filter = 1
 custom_minimum_size = Vector2(128, 40)
@@ -461,10 +457,19 @@ theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
+theme_override_font_sizes/font_size = 32
+disabled = true
+text = "Continue Game"
 
-[node name="NewGameButton3" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="2"]
+[node name="NewGameButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="1"]
+texture_filter = 1
+theme = ExtResource("2_mvgsf")
+theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 32
+
+[node name="LoadGame" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="2"]
 unique_name_in_owner = true
 texture_filter = 1
 custom_minimum_size = Vector2(128, 40)
@@ -473,10 +478,11 @@ theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
+theme_override_font_sizes/font_size = 32
+disabled = true
+text = "Load Game"
 
-[node name="NewGameButton4" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="3"]
+[node name="Multiplayer" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="3"]
 unique_name_in_owner = true
 texture_filter = 1
 custom_minimum_size = Vector2(128, 40)
@@ -485,10 +491,11 @@ theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
+theme_override_font_sizes/font_size = 32
+disabled = true
+text = "Multiplayer"
 
-[node name="NewGameButton5" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="4"]
+[node name="AchievementsAndStats" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="4"]
 unique_name_in_owner = true
 texture_filter = 1
 custom_minimum_size = Vector2(128, 40)
@@ -497,10 +504,28 @@ theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
+theme_override_font_sizes/font_size = 32
+disabled = true
+text = "Achievements and Stats"
 
-[node name="NewGameButton6" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="5"]
+[node name="OptionsButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="5"]
+texture_filter = 1
+theme = ExtResource("2_mvgsf")
+theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+
+[node name="CreditsButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="6"]
+texture_filter = 1
+theme = ExtResource("2_mvgsf")
+theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("6_013fh")
+theme_override_font_sizes/font_size = 32
+
+[node name="GiveFeedback" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="7"]
 unique_name_in_owner = true
 texture_filter = 1
 custom_minimum_size = Vector2(128, 40)
@@ -509,136 +534,16 @@ theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
+theme_override_font_sizes/font_size = 32
+text = "Give Feedback"
 
-[node name="ContinueGameButton" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="6"]
-unique_name_in_owner = true
-visible = false
-texture_filter = 1
-custom_minimum_size = Vector2(128, 40)
-layout_mode = 2
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "Continue"
-
-[node name="OptionsButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="7"]
+[node name="ExitButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="8"]
 texture_filter = 1
 theme = ExtResource("2_mvgsf")
 theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "Options"
-
-[node name="CreditsButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="8"]
-texture_filter = 1
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-
-[node name="ExitButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer" index="9"]
-texture_filter = 1
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-
-[node name="SideMenuButton" type="BoxContainer" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer" index="1"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 31.0
-offset_top = -298.0
-offset_right = 195.0
-offset_bottom = 298.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-theme = ExtResource("2_mvgsf")
-theme_override_constants/separation = 0
-alignment = 1
-vertical = true
-script = ExtResource("8_aruns")
-lock = true
-
-[node name="TextureButton" type="TextureButton" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton" index="0"]
-layout_mode = 2
-
-[node name="ToggleCameraPan" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton" index="1"]
-texture_filter = 1
-custom_minimum_size = Vector2(128, 40)
-layout_mode = 2
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-
-[node name="SeePatchNotes" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton" index="2"]
-texture_filter = 1
-custom_minimum_size = Vector2(128, 40)
-layout_mode = 2
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
-
-[node name="SteamNews" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton" index="3"]
-texture_filter = 1
-custom_minimum_size = Vector2(128, 40)
-layout_mode = 2
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
-
-[node name="Discord" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton" index="4"]
-texture_filter = 1
-custom_minimum_size = Vector2(128, 40)
-layout_mode = 2
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
-
-[node name="BlueSky" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton" index="5"]
-texture_filter = 1
-custom_minimum_size = Vector2(128, 40)
-layout_mode = 2
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "New Game"
-
-[node name="Language" type="Button" parent="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton" index="6"]
-texture_filter = 1
-custom_minimum_size = Vector2(128, 40)
-layout_mode = 2
-theme = ExtResource("2_mvgsf")
-theme_override_colors/font_color = Color(0.724643, 0.724643, 0.724642, 1)
-theme_override_constants/line_spacing = 0
-theme_override_fonts/font = ExtResource("6_013fh")
-theme_override_font_sizes/font_size = 36
-text = "Options"
+theme_override_font_sizes/font_size = 32
 
 [node name="OptionsContainer" parent="." index="8"]
 theme = ExtResource("2_mvgsf")
@@ -660,15 +565,8 @@ theme_override_colors/font_color = Color(0.25098, 0.25098, 0.25098, 1)
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
 
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/NewGameButton2" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/NewGameButton3" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/NewGameButton4" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/NewGameButton5" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/NewGameButton6" to="." method="_on_new_game_button_pressed"]
 [connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/ContinueGameButton" to="." method="_on_continue_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton/ToggleCameraPan" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton/SeePatchNotes" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton/SteamNews" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton/Discord" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton/BlueSky" to="." method="_on_new_game_button_pressed"]
-[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/SideMenuButton/Language" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/LoadGame" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/Multiplayer" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/AchievementsAndStats" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/GiveFeedback" to="." method="_on_new_game_button_pressed"]
