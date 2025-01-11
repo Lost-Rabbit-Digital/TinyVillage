@@ -9,4 +9,7 @@ Main Tasks:
 - Setup sound effects
 - Drop-down menu for spawn categories 
 
+README Tasks:
+- Flowchart of gameloop in 2-5 steps
+
 Completed Tasks:

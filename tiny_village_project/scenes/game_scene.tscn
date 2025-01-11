@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://pshxywf8lfgj"]
+[gd_scene load_steps=10 format=3 uid="uid://pshxywf8lfgj"]
 
 [ext_resource type="PackedScene" uid="uid://2ebx5ibed8ew" path="res://user_interface/creation_menu.tscn" id="1_bw6k5"]
 [ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="1_w5aja"]
 [ext_resource type="PackedScene" uid="uid://c0nu5tpvlg8sh" path="res://user_interface/background_color_manager.tscn" id="2_onqr8"]
+[ext_resource type="PackedScene" uid="uid://v7hsk1l4ak7n" path="res://user_interface/camera_controller.tscn" id="2_utbpp"]
 [ext_resource type="PackedScene" uid="uid://bgxokr08s7v1n" path="res://environment/cloud_manager.tscn" id="3_ycayy"]
+[ext_resource type="Texture2D" uid="uid://rocfxbngyqow" path="res://assets/buildings/building_2.png" id="5_b5spy"]
+[ext_resource type="Texture2D" uid="uid://cj6odr6d0hx7g" path="res://assets/buildings/building_3.png" id="6_utbpp"]
+[ext_resource type="Texture2D" uid="uid://cehdjq1fmivdb" path="res://assets/buildings/building_4.png" id="7_mw25s"]
+[ext_resource type="Texture2D" uid="uid://cdyomyx10hgne" path="res://assets/buildings/building_5.png" id="8_tcjrq"]
 
 [node name="GameScene" type="Control"]
 layout_mode = 3
@@ -11,33 +16,51 @@ anchors_preset = 0
 offset_right = 1280.0
 offset_bottom = 720.0
 
-[node name="CloudManager" parent="." instance=ExtResource("3_ycayy")]
+[node name="CameraController" parent="." instance=ExtResource("2_utbpp")]
+anchor_mode = 0
 
-[node name="WindowFrame" parent="." instance=ExtResource("1_w5aja")]
+[node name="CloudManager" parent="CameraController" instance=ExtResource("3_ycayy")]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CameraController"]
+offset_left = 16.0
+offset_top = -16.0
+offset_right = 1296.0
+offset_bottom = 704.0
+
+[node name="BackgroundColorManager" parent="CameraController/HBoxContainer" instance=ExtResource("2_onqr8")]
 layout_mode = 2
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_right = 1280.0
-offset_bottom = 720.0
-size_flags_horizontal = 6
-size_flags_vertical = 6
+script = null
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.082
-anchor_right = 0.082
-anchor_bottom = 0.964
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="BackgroundColorManager" parent="HBoxContainer" instance=ExtResource("2_onqr8")]
-layout_mode = 2
-
-[node name="CreationMenu" parent="HBoxContainer" instance=ExtResource("1_bw6k5")]
+[node name="CreationMenu" parent="CameraController/HBoxContainer" instance=ExtResource("1_bw6k5")]
 visible = false
 custom_minimum_size = Vector2(128, 32)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
+
+[node name="WindowFrame" parent="CameraController" instance=ExtResource("1_w5aja")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="Building2" type="Sprite2D" parent="."]
+position = Vector2(421, 254)
+texture = ExtResource("5_b5spy")
+
+[node name="Building3" type="Sprite2D" parent="."]
+position = Vector2(667, 247)
+texture = ExtResource("6_utbpp")
+
+[node name="Building4" type="Sprite2D" parent="."]
+position = Vector2(681, 433)
+texture = ExtResource("7_mw25s")
+
+[node name="Building5" type="Sprite2D" parent="."]
+position = Vector2(333, 358)
+texture = ExtResource("8_tcjrq")
