@@ -9,9 +9,6 @@
 ![https://www.reddit.com/r/GoldenAgeMinecraft/comments/12hj7tj/a_base_i_built_on_beta_173/](screenshots/oneegg_42_user_base_reddit.webp)
 
 # Graphics
-## [Mini-fantasy](https://krishna-palacio.itch.io/)
-![Banner showcasing different mini-fantasy assets](screenshots/mini_fantasy_banner.png)
-
 - 2D
 - Isometric or Top-down perspective
 - Doodle-themed?
