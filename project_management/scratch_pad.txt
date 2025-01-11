@@ -8,9 +8,6 @@ Ideas:
 - Civilisation simulator 
 - Gather resources with lil dudes
 
-Graphics:
-- 2D
-- Isometric perspective
 
 GitHub:
 - Add README.md
