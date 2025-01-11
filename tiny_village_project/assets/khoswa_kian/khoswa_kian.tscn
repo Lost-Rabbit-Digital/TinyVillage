@@ -1,0 +1,92 @@
+[gd_scene load_steps=12 format=3 uid="uid://b080nnds4knvv"]
+
+[ext_resource type="Texture2D" uid="uid://cap8rvto1ia6u" path="res://assets/khoswa_kian/spritesheets/khoswa_kian_idle_animation.png" id="1_folpx"]
+[ext_resource type="Texture2D" uid="uid://dvik81keb1f1g" path="res://assets/khoswa_kian/spritesheets/khoswa_kian_walk_animation.png" id="2_16yng"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fspau"]
+atlas = ExtResource("1_folpx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5j06i"]
+atlas = ExtResource("1_folpx")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fwut"]
+atlas = ExtResource("1_folpx")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3fi8h"]
+atlas = ExtResource("1_folpx")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vg2x"]
+atlas = ExtResource("2_16yng")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hc3so"]
+atlas = ExtResource("2_16yng")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s2nho"]
+atlas = ExtResource("2_16yng")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wnfe"]
+atlas = ExtResource("2_16yng")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f4k80"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fspau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5j06i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fwut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3fi8h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fwut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5j06i")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vg2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hc3so")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s2nho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3wnfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s2nho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hc3so")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[node name="KhoswaKian" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_f4k80")
+animation = &"idle"
+frame_progress = 0.265386

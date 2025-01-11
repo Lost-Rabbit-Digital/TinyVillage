@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://pshxywf8lfgj"]
+[gd_scene load_steps=11 format=3 uid="uid://pshxywf8lfgj"]
 
 [ext_resource type="PackedScene" uid="uid://2ebx5ibed8ew" path="res://user_interface/creation_menu.tscn" id="1_bw6k5"]
 [ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="1_w5aja"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cj6odr6d0hx7g" path="res://assets/buildings/building_3.png" id="6_utbpp"]
 [ext_resource type="Texture2D" uid="uid://cehdjq1fmivdb" path="res://assets/buildings/building_4.png" id="7_mw25s"]
 [ext_resource type="Texture2D" uid="uid://cdyomyx10hgne" path="res://assets/buildings/building_5.png" id="8_tcjrq"]
+[ext_resource type="PackedScene" uid="uid://b080nnds4knvv" path="res://assets/khoswa_kian/khoswa_kian.tscn" id="10_mw25s"]
 
 [node name="GameScene" type="Control"]
 layout_mode = 3
@@ -64,3 +65,6 @@ texture = ExtResource("7_mw25s")
 [node name="Building5" type="Sprite2D" parent="."]
 position = Vector2(333, 358)
 texture = ExtResource("8_tcjrq")
+
+[node name="KhoswaKian" parent="." instance=ExtResource("10_mw25s")]
+position = Vector2(300, 467)
