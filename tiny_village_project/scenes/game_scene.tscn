@@ -22,24 +22,15 @@ anchor_mode = 0
 
 [node name="CloudManager" parent="CameraController" instance=ExtResource("3_ycayy")]
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CameraController"]
-offset_left = 16.0
-offset_top = -16.0
-offset_right = 1296.0
-offset_bottom = 704.0
+[node name="UI" type="Control" parent="CameraController"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="BackgroundColorManager" parent="CameraController/HBoxContainer" instance=ExtResource("2_onqr8")]
-layout_mode = 2
-script = null
-
-[node name="CreationMenu" parent="CameraController/HBoxContainer" instance=ExtResource("1_bw6k5")]
-visible = false
-custom_minimum_size = Vector2(128, 32)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-
-[node name="WindowFrame" parent="CameraController" instance=ExtResource("1_w5aja")]
+[node name="WindowFrame" parent="CameraController/UI" instance=ExtResource("1_w5aja")]
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
@@ -49,6 +40,23 @@ grow_horizontal = 1
 grow_vertical = 1
 size_flags_horizontal = 6
 size_flags_vertical = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CameraController/UI"]
+offset_left = 16.0
+offset_top = -16.0
+offset_right = 1296.0
+offset_bottom = 704.0
+
+[node name="BackgroundColorManager" parent="CameraController/UI/HBoxContainer" instance=ExtResource("2_onqr8")]
+layout_mode = 2
+script = null
+
+[node name="CreationMenu" parent="CameraController/UI/HBoxContainer" instance=ExtResource("1_bw6k5")]
+visible = false
+custom_minimum_size = Vector2(128, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
 
 [node name="Building2" type="Sprite2D" parent="."]
 position = Vector2(421, 254)
