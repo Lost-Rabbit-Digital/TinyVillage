@@ -7,8 +7,6 @@ A cozy village-building simulator where you create your own procedurally-generat
 ## Project Management
 
 ### Development Roadmap
-The project follows an iterative development approach with clearly defined milestones:
-
 #### Phase 1: Core Mechanics
 - Basic building placement system
 - Grid-based terrain generation
