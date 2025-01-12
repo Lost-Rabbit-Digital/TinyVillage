@@ -67,13 +67,13 @@ git clone https://github.com/Lost-Rabbit-Digital/TinyVillage.git
 
 ![Import Project Button](project_management/screenshots/installation_godot_import_button.png)
 
-2. Open the project in Godot Engine
+4. Open the project in Godot Engine
 
 ![Open Project Button](project_management/screenshots/installation_godot_open_project_button.png)
 
 ![Godot Import Settings](project_management/screenshots/installation_godot_import_settings.png)
 
-3. Run the project using F5 or the "Play" button
+5. Run the project using F5 or the "Play" button
 
 ![Godot Play Button](project_management/screenshots/Godot_Play_Button.png)
 
