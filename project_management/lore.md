@@ -1,22 +1,41 @@
+Ideas:
+The name Khoswa-Kian is ["Green" in Sylheti](https://en.wikiversity.org/wiki/Sylheti_language/Characteristics_of_Objects) followed by ["Entity" in Arabic](https://quranicnames.com/kian/) (At least according to Google, Ha!)
+
+The story consists of four chapters, each chapter will have three to five paragraphs. 
+
+The Khoswa-Kian have reached the end level of a species in the universe and create a wormhole to send Themselves back to the beginning of their society. They send back a single
+ship titled "Tiny Village" and a dozen of themselves. The crew's mission is to colonise the planet.
+
+The wormhole appeared in a gate-style with titling in an unknown language (this language later turns out to be what they use in the future).
+
+They send a probe into the wormhole with markings on it, and later discover the same markings on a piece of metal in a museum.
+
+The language on the gate vaguely resembles their current language
+
+The cryptanalysis uncover some of the code on the title of the gate, it reads a cryptic code about a new beginning.
+
 # Chapter 1 - Khoswa-Kian
-In the western spiral of the Triangulum Galaxy, tucked between a cluster of red dwarfs and what local astronomers stubbornly call "That Suspiciously Green Nebula," the Khoswa-Kian make their home. 
-They're easy to miss, these two-foot-tall humanoids with their mint-green skin and characteristic envi-suits in eye-searing combinations of electric blue and blazing orange—colors they insist are 
-"perfectly sensible" and "totally not chosen just to annoy human retinas."
+In the eastern spiral of the Triangulum Galaxy, tucked between a cluster of red dwarfs and what local astronomers stubbornly call "That Suspiciously Blue Nebula," the Khoswa-Kian 
+make their home. They're easy to miss, these two-foot-tall humanoids with their mint-green skin and characteristic envi-suits in eye-searing combinations of electric blue and 
+blazing orange—colors they insist are "perfectly sensible" and "totally not chosen just to annoy human retinas."
 
-The Khoswa-Kian evolved on a world perpetually shrouded in bioluminescent fog, which explains both their height (useful for crawling under the mists) and their striking appearance. Their large, 
-almost entirely black eyes contain thousands of light-sensitive cells arranged in honeycomb patterns, allowing them to see not just visible light but also several wavelengths that make humans go 
-cross-eyed just thinking about them. Their fingers are long and delicate, with an extra joint that makes them exceptional at manipulating technology and terrible at using human keyboards.
+The Khoswa-Kian evolved on a world perpetually shrouded in bioluminescent fog, which explains both their height (useful for crawling under the mists) and their striking appearance. 
+Their large, almost entirely black eyes contain thousands of light-sensitive cells arranged in honeycomb patterns, allowing them to see not just visible light but also several 
+wavelengths that make humans go cross-eyed just thinking about them. Their fingers are long and delicate, with an extra joint that makes them exceptional at manipulating 
+technology and terrible at using human keyboards.
 
-The most distinctive feature of Khoswa-Kian fashion is their environmental suits—not because they need them to survive, but because they've turned maintenance work into an art form. Each suit is 
-a riot of blue and orange patches, with countless pockets, tools, and what they swear are "essential decorative flourishes." The suits have become so intrinsic to their culture that formal 
-Khoswa-Kian ceremonies involve elaborate suit-cleaning rituals, and their version of black-tie events is called "freshly-pressed seams."
+The most distinctive feature of Khoswa-Kian fashion is their environmental suits—not because they need them to survive, but because they've turned maintenance work into an art form. 
+Each suit is a riot of blue and orange patches, with countless pockets, tools, and what they swear are "essential decorative flourishes." The suits have become so intrinsic to their 
+culture that formal Khoswa-Kian ceremonies involve elaborate suit-cleaning rituals, and their version of black-tie events is called "freshly-pressed seams."
 
-Their region of space, known simply as the Squiggly Bit, has become a hub for both practical engineering and impractical decoration. While humans spread across three galaxies (mostly by accident 
-and largely because they kept getting lost while looking for decent coffee), the Khoswa-Kian stayed put and focused on making their corner of the universe as garish as possible.
+Their region of space, known simply as the Squiggly Bit, has become a hub for both practical engineering and impractical decoration. While humans spread across three galaxies 
+(mostly by accident and largely because they kept getting lost while looking for decent coffee), the Khoswa-Kian stayed put and focused on making their corner of the universe 
+as garish as possible.
 
-But now, in the heart of this cosmic jumble, something has appeared that even the Khoswa-Kian's enhanced vision can't quite process: a space station that seems to be knitting reality like a 
-cosmic sweater, creating patterns in the fabric of space-time that look suspiciously like argyle socks. The humans have sent their best scientists, armed with clipboards and a worrying amount 
-of optimism. The Khoswa-Kian have dispatched their most accomplished engineers, who approach space station repair like performance art and treat instruction manuals as light suggestion reading.
+But now, in the heart of this cosmic jumble, something has appeared that even the Khoswa-Kian's enhanced vision can't quite process: a space station that seems to be knitting 
+reality like a cosmic sweater, creating patterns in the fabric of space-time that look suspiciously like argyle socks. The humans have sent their best scientists, armed 
+with clipboards and a worrying amount of optimism. The Khoswa-Kian have dispatched their most accomplished engineers, who approach space station repair like performance 
+art and treat instruction manuals as light suggestion reading.
 
 Neither species suspects they're about to uncover the universe's greatest practical joke—a joke so fundamental to the nature of reality that even dark matter chuckles about it. But then again, 
 as the Khoswa-Kian say (while adjusting their perfectly-pressed suit cuffs): "The best part of any cosmic mystery is that it usually needs a good maintenance check."
