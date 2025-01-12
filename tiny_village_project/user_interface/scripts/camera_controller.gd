@@ -23,6 +23,8 @@ func _process(delta):
 	smooth_zoom(delta)
 
 func _draw():
+	# TODO: Clear up code to account for corners
+	# TODO: Implement into movement code under handle_panning
 	# Quadrant 1 (Top)
 	draw_rect(Rect2(1, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
 	# Quadrant 2 (Left)
