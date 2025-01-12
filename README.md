@@ -41,11 +41,6 @@ project_management/
 └── todo_list.md 							# Tasks which need to be completed
 ```
 
-## Project Direction
-
-### Vision Statement
-I have to write something here, but for now [PLACEHOLDER](https://media.istockphoto.com/id/172954792/photo/duckling.jpg?s=1024x1024&w=is&k=20&c=XRLjY2Mcpk-zR-BnZKlpr-pcWcwZnr54asUJMI1qM4s=)!
-
 ## Getting Started
 
 ### Prerequisites
