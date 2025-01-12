@@ -31,6 +31,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="WindowFrame" parent="CameraController/UI" instance=ExtResource("1_w5aja")]
+layout_mode = 0
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
@@ -42,6 +43,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CameraController/UI"]
+layout_mode = 0
 offset_left = 16.0
 offset_top = -16.0
 offset_right = 1296.0

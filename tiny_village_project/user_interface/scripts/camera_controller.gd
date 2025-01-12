@@ -1,7 +1,8 @@
 extends Camera2D
 
 @export var pan_speed: float = 500.0  # Adjust this to control pan speed
-@export var pan_margin: float = 250.0  # How close to the edge before panning starts
+@export var horizontal_pan_margin: float = 450.0  # How close to the edge before panning starts
+@export var vertical_pan_margin: float = 250.0  # How close to the edge before panning starts
 @export var min_zoom: float = 0.5  # Maximum zoom out (smaller number = more zoomed out)
 @export var max_zoom: float = 2.0   # Maximum zoom in
 @export var zoom_speed: float = 0.1  # How fast to zoom with scroll wheel
@@ -22,15 +23,23 @@ func _process(delta):
 	smooth_zoom(delta)
 
 func _draw():
-	# Quadrant 1 (Top Right)
-	draw_rect(Rect2((viewport_size.x / 2) + pan_margin, 1, (viewport_size.x / 2) - pan_margin, (viewport_size.y / 2) - pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
-	# Quadrant 2 (Top Left)
-	draw_rect(Rect2(0, 1, (viewport_size.x / 2) - pan_margin, (viewport_size.y / 2) - pan_margin), Color.YELLOW, false, 2)
-	# Quadrant 3 (Bottom Left)
-	draw_rect(Rect2(0, (viewport_size.y / 2) + pan_margin, (viewport_size.x / 2) - pan_margin, (viewport_size.y / 2) - pan_margin), Color.MAROON, false, 2)
-	# Quadrant 4 (Bottom Right)
-	draw_rect(Rect2((viewport_size.x / 2) + pan_margin, (viewport_size.y / 2) + pan_margin, (viewport_size.x / 2) - pan_margin, (viewport_size.y / 2) - pan_margin), Color.OLIVE_DRAB, false, 2)
-
+	# Quadrant 1 (Top)
+	draw_rect(Rect2(1, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
+	# Quadrant 2 (Left)
+	draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.YELLOW, false, 2)
+	# Quadrant 3 (Bottom)
+	draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MAROON, false, 2)
+	# Quadrant 4 (Right)
+	draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.OLIVE_DRAB, false, 2)
+	# Quadrant 5 (Top Left)
+	draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) - vertical_pan_margin), Color.WEB_PURPLE, false, 2)
+	# Quadrant 6 (Top Right)
+	draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.ROSY_BROWN, false, 2)
+	# Quadrant 7 (Bottom Left)
+	draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, (viewport_size.x / 2) - horizontal_pan_margin, viewport_size.y), Color.SANDY_BROWN, false, 2)
+	# Quadrant 8 (Bottom Right)
+	draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, viewport_size.y), Color.GAINSBORO, false, 2)
+	
 func handle_panning(delta):
 	if not is_panning:
 		return
@@ -39,21 +48,21 @@ func handle_panning(delta):
 	var pan_direction = Vector2.ZERO
 	
 	# Get screen dimensions
-	var width = viewport_size.x
-	var height = viewport_size.y
+	
+	
 	
 	# Check which quadrant the mouse is in and set pan direction
 	# Quadrant 1 (Top Right)
-	if mouse_pos.x > (width / 2) + pan_margin and mouse_pos.y < (height / 2) - pan_margin:
+	if mouse_pos.x > (viewport_size.x / 2) + horizontal_pan_margin and mouse_pos.y < (viewport_size.y / 2) - vertical_pan_margin:
 		pan_direction = Vector2(1, -1)
 	# Quadrant 2 (Top Left)
-	elif mouse_pos.x < (width / 2) - pan_margin and mouse_pos.y < (height / 2) - pan_margin:
+	elif mouse_pos.x < (viewport_size.x / 2) - horizontal_pan_margin and mouse_pos.y < (viewport_size.y / 2) - vertical_pan_margin:
 		pan_direction = Vector2(-1, -1)
 	# Quadrant 3 (Bottom Left)
-	elif mouse_pos.x < (width / 2) - pan_margin and mouse_pos.y > (height / 2) + pan_margin:
+	elif mouse_pos.x < (viewport_size.x / 2) - horizontal_pan_margin and mouse_pos.y > (viewport_size.y / 2) + vertical_pan_margin:
 		pan_direction = Vector2(-1, 1)
 	# Quadrant 4 (Bottom Right)
-	elif mouse_pos.x > (width / 2) + pan_margin and mouse_pos.y > (height / 2) + pan_margin:
+	elif mouse_pos.x > (viewport_size.x / 2) + horizontal_pan_margin and mouse_pos.y > (viewport_size.y / 2) + vertical_pan_margin:
 		pan_direction = Vector2(1, 1)
 	
 	# Apply the pan movement
