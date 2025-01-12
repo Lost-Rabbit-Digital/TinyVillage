@@ -44,7 +44,7 @@ project_management/
 │   ├── game_design_document.md				# Basic game design document
 │   └── possible_assets.md   				# Asset planning and requirements
 ├── screenshots/             				# Marketing and documentation screenshots
-├── lore.md									# Backstory  and outlines for the lore of the game
+├── lore.md									# Backstory and outlines for the lore of the game
 ├── possible_assets.md 						# Assets such as plugins and art which could be used
 ├── scratch_pad.md 							# Random ideas and tasks to complete
 └── todo_list.md 							# Tasks which need to be completed
