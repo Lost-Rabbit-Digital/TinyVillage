@@ -55,6 +55,7 @@ project_management/
 ### Prerequisites
 - Godot Engine v4.4.dev7.official [46c8f8c5c] or similar
 - Git
+- Markdown Reader
 
 ### Installation
 1. Clone the repository
