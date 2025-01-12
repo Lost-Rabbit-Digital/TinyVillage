@@ -64,20 +64,27 @@ git clone https://github.com/yourusername/tiny-village.git
 ```
 2. Open Godot Engine
 3. Import the `project.godot` under `TinyVillage/tiny_village_project/project.godot`
-![alt text](project_management/screenshots/installation_godot_import_button.png)
+
+![Import Project Button](project_management/screenshots/installation_godot_import_button.png)
+
 2. Open the project in Godot Engine
+
+![Open Project Button](project_management/screenshots/installation_godot_open_project_button.png)
+
 ![Godot Import Settings](project_management/screenshots/installation_godot_import_settings.png)
 
 3. Run the project using F5 or the "Play" button
 
+![Godot Play Button](project_management/screenshots/Godot_Play_Button.png)
+
 ## Contributing
-We welcome contributions! Please read our contribution guidelines before submitting pull requests.
+We welcome contributions!
 
 ### Areas for Contribution
 - Bug fixes
 - Performance improvements
-- New building designs
 - Documentation improvements
+- New art
 - Localization
 
 ## License
