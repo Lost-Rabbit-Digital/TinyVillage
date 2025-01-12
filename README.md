@@ -34,7 +34,7 @@ A cozy village-building simulator where you create your own procedurally-generat
 - Bugfixes
 
 #### Phase 5: Release
-- Release to Steam
+- Release the game on Steam
 
 ### Project Structure
 ```
