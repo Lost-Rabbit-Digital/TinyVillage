@@ -60,7 +60,7 @@ project_management/
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/tiny-village.git
+git clone https://github.com/Lost-Rabbit-Digital/TinyVillage.git
 ```
 2. Open Godot Engine
 3. Import the `project.godot` under `TinyVillage/tiny_village_project/project.godot`
