@@ -19,13 +19,25 @@ The project follows an iterative development approach with clearly defined miles
 - Advanced lighting system
 - Weather effects
 - Particle systems
-- Enhanced building models
 
-#### Phase 3: Content Expansion
+#### Phase 3: Marketing
+- Marketing
+- Steam page
+
+#### Phase 4: Content Expansion
 - New building types
 - Villager AI behaviors
 - Quest system
-- Achievement system
+
+#### Phase 5: Polishing
+- Playtesters 
+- Review/Polish
+- Bugfixes
+- Giveaway keys to Patreon and Ko-fi members
+
+#### Phase 5: Release
+- Release to Steam
+- Giveaway keys to reviewers, YouTubers, and random community members
 
 ### Project Structure
 ```
