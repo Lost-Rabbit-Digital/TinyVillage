@@ -62,7 +62,12 @@ project_management/
 ```bash
 git clone https://github.com/yourusername/tiny-village.git
 ```
+2. Open Godot Engine
+3. Import the `project.godot` under `TinyVillage/tiny_village_project/project.godot`
+![alt text](project_management/screenshots/installation_godot_import_button.png)
 2. Open the project in Godot Engine
+![Godot Import Settings](project_management/screenshots/installation_godot_import_settings.png)
+
 3. Run the project using F5 or the "Play" button
 
 ## Contributing
