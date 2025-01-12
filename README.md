@@ -21,6 +21,7 @@ A cozy village-building simulator where you create your own procedurally-generat
 #### Phase 3: Marketing
 - Marketing
 - Steam page
+- Giveaway keys to Reviewers, YouTubers, Patreon Supporters, Ko-Fi Supporters, and community members
 
 #### Phase 4: Content Expansion
 - New building types
@@ -31,11 +32,9 @@ A cozy village-building simulator where you create your own procedurally-generat
 - Playtesters 
 - Review/Polish
 - Bugfixes
-- Giveaway keys to Patreon and Ko-fi members
 
 #### Phase 5: Release
 - Release to Steam
-- Giveaway keys to reviewers, YouTubers, and random community members
 
 ### Project Structure
 ```
