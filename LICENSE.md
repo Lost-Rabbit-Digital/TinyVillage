@@ -3,5 +3,5 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  *
  * Copyright (c) 2024 Lost Rabbit Digital. All rights reserved.
- * This file is part of Spud Customs.
+ * This file is part of Tiny Village.
  */
