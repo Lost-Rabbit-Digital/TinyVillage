@@ -66,6 +66,18 @@ func handle_panning(delta):
 	# Quadrant 4 (Bottom Right)
 	elif mouse_pos.x > (viewport_size.x / 2) + horizontal_pan_margin and mouse_pos.y > (viewport_size.y / 2) + vertical_pan_margin:
 		pan_direction = Vector2(1, 1)
+	# Quadrant 5 (Top)
+	elif mouse_pos.y < (viewport_size.y / 2) - vertical_pan_margin:
+		pan_direction = Vector2(0, -1)
+	# Quadrant 6 (Left)
+	elif mouse_pos.x < (viewport_size.x / 2) - horizontal_pan_margin:
+		pan_direction = Vector2(-1, 0)
+	# Quadrant 7 (Bottom)
+	elif mouse_pos.y > (viewport_size.y / 2) + vertical_pan_margin:
+		pan_direction = Vector2(0, 1)
+	# Quadrant 8 (Right)
+	elif mouse_pos.x > (viewport_size.x / 2) + horizontal_pan_margin:
+		pan_direction = Vector2(1, 0)
 	
 	# Apply the pan movement
 	if pan_direction != Vector2.ZERO:
