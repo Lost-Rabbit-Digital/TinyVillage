@@ -7,6 +7,7 @@ extends Camera2D
 @export var max_zoom: float = 2.0   # Maximum zoom in
 @export var zoom_speed: float = 0.1  # How fast to zoom with scroll wheel
 @export var zoom_key_speed: float = 1.0  # How fast to zoom with keys per second
+@export var debug_outlines: bool = false
 
 var viewport_size: Vector2
 var is_panning: bool = true
@@ -23,25 +24,24 @@ func _process(delta):
 	smooth_zoom(delta)
 
 func _draw():
-	# TODO: Clear up code to account for corners
-	# TODO: Implement into movement code under handle_panning
-	# Quadrant 1 (Top)
-	draw_rect(Rect2(1, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
-	# Quadrant 2 (Left)
-	draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.YELLOW, false, 2)
-	# Quadrant 3 (Bottom)
-	draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MAROON, false, 2)
-	# Quadrant 4 (Right)
-	draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.OLIVE_DRAB, false, 2)
-	# Quadrant 5 (Top Left)
-	draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) - vertical_pan_margin), Color.WEB_PURPLE, false, 2)
-	# Quadrant 6 (Top Right)
-	draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.ROSY_BROWN, false, 2)
-	# Quadrant 7 (Bottom Left)
-	draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, (viewport_size.x / 2) - horizontal_pan_margin, viewport_size.y), Color.SANDY_BROWN, false, 2)
-	# Quadrant 8 (Bottom Right)
-	draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, viewport_size.y), Color.GAINSBORO, false, 2)
-	
+	if debug_outlines:
+		# Quadrant 1 (Top)
+		draw_rect(Rect2(1, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
+		# Quadrant 2 (Left)
+		draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.YELLOW, false, 2)
+		# Quadrant 3 (Bottom)
+		draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MAROON, false, 2)
+		# Quadrant 4 (Right)
+		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.OLIVE_DRAB, false, 2)
+		# Quadrant 5 (Top Left)
+		draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) - vertical_pan_margin), Color.WEB_PURPLE, false, 2)
+		# Quadrant 6 (Top Right)
+		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.ROSY_BROWN, false, 2)
+		# Quadrant 7 (Bottom Left)
+		draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, (viewport_size.x / 2) - horizontal_pan_margin, viewport_size.y), Color.SANDY_BROWN, false, 2)
+		# Quadrant 8 (Bottom Right)
+		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, viewport_size.y), Color.GAINSBORO, false, 2)
+		
 func handle_panning(delta):
 	if not is_panning:
 		return
