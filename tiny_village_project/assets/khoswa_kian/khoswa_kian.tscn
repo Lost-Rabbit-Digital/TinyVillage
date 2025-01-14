@@ -90,4 +90,4 @@ animations = [{
 sprite_frames = SubResource("SpriteFrames_f4k80")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.32734
+frame_progress = 0.43845

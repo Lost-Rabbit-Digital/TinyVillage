@@ -10,7 +10,7 @@ Ideas:
 
 
 GitHub:
-- Add README.md
+- Update LICENSE.MD
 
 
 Necesse Notes:
@@ -21,7 +21,3 @@ Main Menu:
 - Feedback button
 - Toggle camera pan button
 
-
-Completed Tasks:
-- Update credits.md to ATRRIBUTION.md
-- remove .vscode

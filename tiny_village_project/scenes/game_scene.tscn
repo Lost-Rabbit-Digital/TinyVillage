@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://pshxywf8lfgj"]
+[gd_scene load_steps=15 format=3 uid="uid://pshxywf8lfgj"]
 
 [ext_resource type="PackedScene" uid="uid://2ebx5ibed8ew" path="res://user_interface/creation_menu.tscn" id="1_bw6k5"]
 [ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="1_w5aja"]
@@ -10,6 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://cehdjq1fmivdb" path="res://assets/buildings/building_4.png" id="7_mw25s"]
 [ext_resource type="Texture2D" uid="uid://cdyomyx10hgne" path="res://assets/buildings/building_5.png" id="8_tcjrq"]
 [ext_resource type="PackedScene" uid="uid://b080nnds4knvv" path="res://assets/khoswa_kian/khoswa_kian.tscn" id="10_mw25s"]
+[ext_resource type="Texture2D" uid="uid://hav7vejr7w2g" path="res://assets/trees/tree_1.png" id="11_5ay1a"]
+[ext_resource type="Texture2D" uid="uid://k77qr72b4qkq" path="res://assets/trees/tree_2.png" id="12_ldkr4"]
+[ext_resource type="Texture2D" uid="uid://bwk2rsc51gg47" path="res://assets/trees/tree_3.png" id="13_liy57"]
+[ext_resource type="Texture2D" uid="uid://c0lieyndq67te" path="res://assets/water/pond_2.png" id="14_mwyo0"]
 
 [node name="GameScene" type="Control"]
 layout_mode = 3
@@ -19,6 +23,7 @@ offset_bottom = 720.0
 
 [node name="CameraController" parent="." instance=ExtResource("2_utbpp")]
 anchor_mode = 0
+debug_outlines = true
 
 [node name="CloudManager" parent="CameraController" instance=ExtResource("3_ycayy")]
 
@@ -78,3 +83,43 @@ texture = ExtResource("8_tcjrq")
 
 [node name="KhoswaKian" parent="." instance=ExtResource("10_mw25s")]
 position = Vector2(300, 467)
+
+[node name="Tree1" type="Sprite2D" parent="."]
+position = Vector2(208, 236)
+texture = ExtResource("11_5ay1a")
+
+[node name="Tree2" type="Sprite2D" parent="."]
+position = Vector2(255, 252)
+texture = ExtResource("11_5ay1a")
+
+[node name="Tree3" type="Sprite2D" parent="."]
+position = Vector2(213, 273)
+texture = ExtResource("11_5ay1a")
+
+[node name="Tree4" type="Sprite2D" parent="."]
+position = Vector2(152, 235)
+texture = ExtResource("11_5ay1a")
+
+[node name="Tree5" type="Sprite2D" parent="."]
+position = Vector2(245, 287)
+texture = ExtResource("12_ldkr4")
+
+[node name="Tree6" type="Sprite2D" parent="."]
+position = Vector2(177, 241)
+texture = ExtResource("12_ldkr4")
+
+[node name="Tree7" type="Sprite2D" parent="."]
+position = Vector2(232, 236)
+texture = ExtResource("13_liy57")
+
+[node name="Tree8" type="Sprite2D" parent="."]
+position = Vector2(163, 275)
+texture = ExtResource("12_ldkr4")
+
+[node name="Tree9" type="Sprite2D" parent="."]
+position = Vector2(185, 287)
+texture = ExtResource("13_liy57")
+
+[node name="Pond2" type="Sprite2D" parent="."]
+position = Vector2(546, 349)
+texture = ExtResource("14_mwyo0")
