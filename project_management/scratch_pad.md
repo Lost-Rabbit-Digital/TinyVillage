@@ -8,11 +8,6 @@ Ideas:
 - Civilisation simulator 
 - Gather resources with lil dudes
 
-
-GitHub:
-- Update LICENSE.MD
-
-
 Necesse Notes:
 Main Menu:
 - I love the scrolling background of different biomes
@@ -20,4 +15,3 @@ Main Menu:
 - I like how many links to social media there are
 - Feedback button
 - Toggle camera pan button
-
