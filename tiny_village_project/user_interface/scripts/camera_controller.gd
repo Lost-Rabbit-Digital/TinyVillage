@@ -7,16 +7,16 @@ extends Camera2D
 @export var max_zoom: float = 2.0   # Maximum zoom in
 @export var zoom_speed: float = 0.1  # How fast to zoom with scroll wheel
 @export var zoom_key_speed: float = 1.0  # How fast to zoom with keys per second
-@export var debug_outlines: bool = false
-@export var camera_zoom: bool = false
-@export var is_panning: bool = true
+@export var debug_outlines: bool = false # Outline of panning margins
+@export var camera_zoom: bool = false # Toggle for the zoom mechanic
+@export var is_panning: bool = true # Whether or not the camera can pan
 
-var viewport_size: Vector2
+var viewport_size: Vector2 # Size of the game window
 var target_zoom: Vector2 = Vector2.ONE  # Target zoom level for smooth zooming
-var initial_selection_position: Vector2
-var final_selection_position: Vector2
-var mouse_selection: bool = false
-var mouse_position: Vector2
+var initial_selection_position: Vector2 # Initial point which the selection interaction begins
+var final_selection_position: Vector2 # Final point of the selection interaction
+var mouse_selection: bool = false # Whether the user is currently selecting something
+var mouse_position: Vector2 # The current position of the mouse in the viewport
 
 func _ready():
 	# Get the initial viewport size
@@ -96,6 +96,7 @@ func _input(event):
 			final_selection_position = event.position
 			print("ACTION PRESSED: Mouse selection finish - [STATUS ", mouse_selection, "]")
 			print("ACTION LOCATION: ", final_selection_position)
+		
 		# Handle mouse wheel zoom
 		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 			# Zoom in with mouse wheel down
@@ -121,6 +122,7 @@ func _input(event):
 		print("ACTION PRESSED: Toggle camera debug outlines - [STATUS ", debug_outlines, "]")
 
 func _draw():
+	# Draw the dashed rectangle for the selection interaction
 	if mouse_selection:
 		var rect_pos = Vector2(
 			min(initial_selection_position.x, mouse_position.x),
@@ -142,6 +144,8 @@ func _draw():
 		draw_dashed_line(top_right, bottom_right, Color.MEDIUM_AQUAMARINE, 2, 5)  # Right
 		draw_dashed_line(bottom_right, bottom_left, Color.MEDIUM_AQUAMARINE, 2, 5)  # Bottom
 		draw_dashed_line(bottom_left, top_left, Color.MEDIUM_AQUAMARINE, 2, 5)  # Left
+	
+	# Draw the debug outlines for the pan margins on the camera
 	if debug_outlines:
 		# Quadrant 1 (Top)
 		draw_rect(Rect2(1, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
