@@ -1,7 +1,5 @@
-[gd_scene load_steps=14 format=3 uid="uid://pshxywf8lfgj"]
+[gd_scene load_steps=12 format=3 uid="uid://pshxywf8lfgj"]
 
-[ext_resource type="PackedScene" uid="uid://2ebx5ibed8ew" path="res://user_interface/creation_menu.tscn" id="1_bw6k5"]
-[ext_resource type="PackedScene" uid="uid://c0nu5tpvlg8sh" path="res://user_interface/background_color_manager.tscn" id="2_onqr8"]
 [ext_resource type="PackedScene" uid="uid://v7hsk1l4ak7n" path="res://user_interface/camera_controller.tscn" id="2_utbpp"]
 [ext_resource type="PackedScene" uid="uid://bgxokr08s7v1n" path="res://environment/cloud_manager.tscn" id="3_ycayy"]
 [ext_resource type="Texture2D" uid="uid://rocfxbngyqow" path="res://assets/buildings/building_2.png" id="5_b5spy"]
@@ -26,87 +24,67 @@ debug_outlines = true
 
 [node name="CloudManager" parent="CameraController" instance=ExtResource("3_ycayy")]
 
-[node name="UI" type="Control" parent="CameraController"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CameraController/UI"]
-layout_mode = 0
-offset_left = 16.0
-offset_top = -16.0
-offset_right = 1296.0
-offset_bottom = 704.0
-
-[node name="BackgroundColorManager" parent="CameraController/UI/HBoxContainer" instance=ExtResource("2_onqr8")]
-layout_mode = 2
-script = null
-
-[node name="CreationMenu" parent="CameraController/UI/HBoxContainer" instance=ExtResource("1_bw6k5")]
-visible = false
-custom_minimum_size = Vector2(128, 32)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-
-[node name="Building2" type="Sprite2D" parent="."]
-position = Vector2(421, 254)
-texture = ExtResource("5_b5spy")
-
-[node name="Building3" type="Sprite2D" parent="."]
-position = Vector2(667, 247)
-texture = ExtResource("6_utbpp")
-
-[node name="Building4" type="Sprite2D" parent="."]
-position = Vector2(681, 433)
-texture = ExtResource("7_mw25s")
-
-[node name="Building5" type="Sprite2D" parent="."]
-position = Vector2(333, 358)
-texture = ExtResource("8_tcjrq")
-
 [node name="KhoswaKian" parent="." instance=ExtResource("10_mw25s")]
 position = Vector2(300, 467)
 
-[node name="Tree1" type="Sprite2D" parent="."]
+[node name="Trees" type="Node" parent="."]
+
+[node name="Tree1" type="Sprite2D" parent="Trees"]
 position = Vector2(208, 236)
 texture = ExtResource("11_5ay1a")
 
-[node name="Tree2" type="Sprite2D" parent="."]
+[node name="Tree2" type="Sprite2D" parent="Trees"]
 position = Vector2(255, 252)
 texture = ExtResource("11_5ay1a")
 
-[node name="Tree3" type="Sprite2D" parent="."]
+[node name="Tree3" type="Sprite2D" parent="Trees"]
 position = Vector2(213, 273)
 texture = ExtResource("11_5ay1a")
 
-[node name="Tree4" type="Sprite2D" parent="."]
+[node name="Tree4" type="Sprite2D" parent="Trees"]
 position = Vector2(152, 235)
 texture = ExtResource("11_5ay1a")
 
-[node name="Tree5" type="Sprite2D" parent="."]
+[node name="Tree5" type="Sprite2D" parent="Trees"]
 position = Vector2(245, 287)
 texture = ExtResource("12_ldkr4")
 
-[node name="Tree6" type="Sprite2D" parent="."]
+[node name="Tree6" type="Sprite2D" parent="Trees"]
 position = Vector2(177, 241)
 texture = ExtResource("12_ldkr4")
 
-[node name="Tree7" type="Sprite2D" parent="."]
+[node name="Tree7" type="Sprite2D" parent="Trees"]
 position = Vector2(232, 236)
 texture = ExtResource("13_liy57")
 
-[node name="Tree8" type="Sprite2D" parent="."]
+[node name="Tree8" type="Sprite2D" parent="Trees"]
 position = Vector2(163, 275)
 texture = ExtResource("12_ldkr4")
 
-[node name="Tree9" type="Sprite2D" parent="."]
+[node name="Tree9" type="Sprite2D" parent="Trees"]
 position = Vector2(185, 287)
 texture = ExtResource("13_liy57")
 
-[node name="Pond2" type="Sprite2D" parent="."]
+[node name="Ponds" type="Node" parent="."]
+
+[node name="Pond2" type="Sprite2D" parent="Ponds"]
 position = Vector2(546, 349)
 texture = ExtResource("14_mwyo0")
+
+[node name="Buildings" type="Node" parent="."]
+
+[node name="Building2" type="Sprite2D" parent="Buildings"]
+position = Vector2(421, 254)
+texture = ExtResource("5_b5spy")
+
+[node name="Building3" type="Sprite2D" parent="Buildings"]
+position = Vector2(667, 247)
+texture = ExtResource("6_utbpp")
+
+[node name="Building4" type="Sprite2D" parent="Buildings"]
+position = Vector2(681, 433)
+texture = ExtResource("7_mw25s")
+
+[node name="Building5" type="Sprite2D" parent="Buildings"]
+position = Vector2(333, 358)
+texture = ExtResource("8_tcjrq")
