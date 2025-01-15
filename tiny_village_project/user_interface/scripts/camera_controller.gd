@@ -120,7 +120,6 @@ func _input(event):
 
 func _draw():
 	if mouse_selection:
-		# Calculate the rectangle between initial click and current mouse position
 		var rect_pos = Vector2(
 			min(initial_selection_position.x, mouse_position.x),
 			min(initial_selection_position.y, mouse_position.y)
@@ -129,8 +128,18 @@ func _draw():
 			abs(mouse_position.x - initial_selection_position.x),
 			abs(mouse_position.y - initial_selection_position.y)
 		)
-		draw_rect(Rect2(rect_pos, rect_size), Color.MEDIUM_AQUAMARINE, false, 2)
 		
+		# Define the four corners
+		var top_left = rect_pos
+		var top_right = Vector2(rect_pos.x + rect_size.x, rect_pos.y)
+		var bottom_right = rect_pos + rect_size
+		var bottom_left = Vector2(rect_pos.x, rect_pos.y + rect_size.y)
+		
+		# Draw the four dashed lines
+		draw_dashed_line(top_left, top_right, Color.MEDIUM_AQUAMARINE, 2, 5)  # Top
+		draw_dashed_line(top_right, bottom_right, Color.MEDIUM_AQUAMARINE, 2, 5)  # Right
+		draw_dashed_line(bottom_right, bottom_left, Color.MEDIUM_AQUAMARINE, 2, 5)  # Bottom
+		draw_dashed_line(bottom_left, top_left, Color.MEDIUM_AQUAMARINE, 2, 5)  # Left
 	if debug_outlines:
 		# Quadrant 1 (Top)
 		draw_rect(Rect2(1, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
