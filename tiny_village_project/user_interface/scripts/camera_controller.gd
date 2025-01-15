@@ -43,7 +43,7 @@ func _draw():
 		draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, (viewport_size.x / 2) - horizontal_pan_margin, viewport_size.y), Color.SANDY_BROWN, false, 2)
 		# Quadrant 8 (Bottom Right)
 		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, viewport_size.y), Color.GAINSBORO, false, 2)
-		
+
 func handle_panning(delta):
 	if not is_panning:
 		return
@@ -108,3 +108,9 @@ func _input(event):
 	
 	if event.is_action_pressed("toggle_pan"):
 		is_panning = !is_panning
+		print("ACTION PRESSED: Toggle camera pan - [STATUS ", is_panning, "]")
+		
+	if event.is_action_pressed("toggle_debug"):
+		debug_outlines = !debug_outlines
+		queue_redraw()
+		print("ACTION PRESSED: Toggle camera debug outlines - [STATUS ", debug_outlines, "]")
