@@ -20,6 +20,7 @@ offset_bottom = 720.0
 
 [node name="CameraController" parent="." instance=ExtResource("2_utbpp")]
 anchor_mode = 0
+camera_zoom = true
 is_panning = false
 
 [node name="CloudManager" parent="CameraController" instance=ExtResource("3_ycayy")]

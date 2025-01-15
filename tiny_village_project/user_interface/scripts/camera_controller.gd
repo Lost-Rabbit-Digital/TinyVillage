@@ -21,18 +21,21 @@ var mouse_position: Vector2 # The current position of the mouse in the viewport
 func _ready():
 	# Get the initial viewport size
 	viewport_size = get_viewport().get_visible_rect().size
-	target_zoom = zoom  # Initialize target zoom to match current zoom
+	# Initialize target zoom to match current zoom
+	target_zoom = zoom  
 
 func _process(delta):
-	handle_panning(delta)
-	handle_key_zoom(delta)
+	# Handle the toggle for panning mechanic
+	if is_panning:
+		handle_panning(delta)
+	
+	# TODO: Fix coordinates for mouse when zooming and selecting
+	# Handle the toggle for the zooming mechanic
 	if camera_zoom:
 		smooth_zoom(delta)
+		handle_key_zoom(delta)
 
 func handle_panning(delta):
-	if not is_panning:
-		return
-		
 	var mouse_pos = get_viewport().get_mouse_position()
 	var pan_direction = Vector2.ZERO
 	
