@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c63y6b25bs4bk"]
+[gd_scene load_steps=22 format=3 uid="uid://c63y6b25bs4bk"]
 
 [ext_resource type="PackedScene" uid="uid://c6k5nnpbypshi" path="res://addons/maaacks_menus_template/base/scenes/menus/main_menu/main_menu.tscn" id="1_0i2sc"]
 [ext_resource type="Theme" uid="uid://cgyr60agclm5y" path="res://assets/default_theme.tres" id="2_mvgsf"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bdvdf5v87mmrr" path="res://addons/maaacks_menus_template/examples/scenes/menus/options_menu/master_options_menu_with_tabs.tscn" id="3_tuy3s"]
 [ext_resource type="PackedScene" uid="uid://c1g50h2avck3w" path="res://addons/maaacks_menus_template/examples/scenes/credits/credits.tscn" id="4_lwsll"]
 [ext_resource type="FontFile" uid="uid://cp7e3etd5igwr" path="res://assets/font/sagesans-Regular.ttf" id="6_013fh"]
+[ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="6_aruns"]
 [ext_resource type="PackedScene" uid="uid://bgxokr08s7v1n" path="res://environment/cloud_manager.tscn" id="6_avwjl"]
 
 [sub_resource type="Animation" id="1"]
@@ -359,22 +360,33 @@ game_scene_path = "uid://pshxywf8lfgj"
 options_packed_scene = ExtResource("3_tuy3s")
 credits_packed_scene = ExtResource("4_lwsll")
 
-[node name="CloudManager" parent="." index="1" instance=ExtResource("6_avwjl")]
+[node name="WindowFrame" parent="." index="0" instance=ExtResource("6_aruns")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 6
+size_flags_vertical = 6
 
-[node name="MenuAnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+[node name="CloudManager" parent="." index="2" instance=ExtResource("6_avwjl")]
+
+[node name="MenuAnimationPlayer" type="AnimationPlayer" parent="." index="3"]
 libraries = {
 &"": SubResource("AnimationLibrary_2kqig")
 }
 
-[node name="MenuAnimationTree" type="AnimationTree" parent="." index="3"]
+[node name="MenuAnimationTree" type="AnimationTree" parent="." index="4"]
 tree_root = SubResource("AnimationNodeStateMachine_vikuh")
 anim_player = NodePath("../MenuAnimationPlayer")
 parameters/conditions/intro_done = false
 
-[node name="BackgroundTextureRect" parent="." index="5"]
+[node name="BackgroundTextureRect" parent="." index="6"]
 theme = ExtResource("2_mvgsf")
 
-[node name="VersionMargin" parent="." index="6"]
+[node name="VersionMargin" parent="." index="7"]
 theme = ExtResource("2_mvgsf")
 
 [node name="VersionContainer" parent="VersionMargin" index="0"]
@@ -390,7 +402,7 @@ theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
 theme_override_font_sizes/font_size = 24
 
-[node name="MenuContainer" parent="." index="7"]
+[node name="MenuContainer" parent="." index="8"]
 theme = ExtResource("2_mvgsf")
 
 [node name="TitleMargin" parent="MenuContainer" index="0"]
@@ -551,13 +563,13 @@ theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("6_013fh")
 theme_override_font_sizes/font_size = 32
 
-[node name="OptionsContainer" parent="." index="8"]
+[node name="OptionsContainer" parent="." index="9"]
 theme = ExtResource("2_mvgsf")
 
-[node name="CreditsContainer" parent="." index="9"]
+[node name="CreditsContainer" parent="." index="10"]
 theme = ExtResource("2_mvgsf")
 
-[node name="FlowControlContainer" parent="." index="10"]
+[node name="FlowControlContainer" parent="." index="11"]
 theme = ExtResource("2_mvgsf")
 
 [node name="FlowControl" parent="FlowControlContainer" index="0"]

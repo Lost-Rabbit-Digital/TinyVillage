@@ -1,7 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://pshxywf8lfgj"]
+[gd_scene load_steps=14 format=3 uid="uid://pshxywf8lfgj"]
 
 [ext_resource type="PackedScene" uid="uid://2ebx5ibed8ew" path="res://user_interface/creation_menu.tscn" id="1_bw6k5"]
-[ext_resource type="PackedScene" uid="uid://bflh4tksqura8" path="res://user_interface/window_frame.tscn" id="1_w5aja"]
 [ext_resource type="PackedScene" uid="uid://c0nu5tpvlg8sh" path="res://user_interface/background_color_manager.tscn" id="2_onqr8"]
 [ext_resource type="PackedScene" uid="uid://v7hsk1l4ak7n" path="res://user_interface/camera_controller.tscn" id="2_utbpp"]
 [ext_resource type="PackedScene" uid="uid://bgxokr08s7v1n" path="res://environment/cloud_manager.tscn" id="3_ycayy"]
@@ -34,18 +33,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="WindowFrame" parent="CameraController/UI" instance=ExtResource("1_w5aja")]
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_right = 1280.0
-offset_bottom = 720.0
-grow_horizontal = 1
-grow_vertical = 1
-size_flags_horizontal = 6
-size_flags_vertical = 6
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CameraController/UI"]
 layout_mode = 0
