@@ -9,10 +9,14 @@ extends Camera2D
 @export var zoom_key_speed: float = 1.0  # How fast to zoom with keys per second
 @export var debug_outlines: bool = false
 @export var camera_zoom: bool = false
+@export var is_panning: bool = true
 
 var viewport_size: Vector2
-var is_panning: bool = true
 var target_zoom: Vector2 = Vector2.ONE  # Target zoom level for smooth zooming
+var initial_selection_position: Vector2
+var final_selection_position: Vector2
+var mouse_selection: bool = false
+var mouse_position: Vector2
 
 func _ready():
 	# Get the initial viewport size
@@ -24,25 +28,6 @@ func _process(delta):
 	handle_key_zoom(delta)
 	if camera_zoom:
 		smooth_zoom(delta)
-
-func _draw():
-	if debug_outlines:
-		# Quadrant 1 (Top)
-		draw_rect(Rect2(1, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
-		# Quadrant 2 (Left)
-		draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.YELLOW, false, 2)
-		# Quadrant 3 (Bottom)
-		draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MAROON, false, 2)
-		# Quadrant 4 (Right)
-		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.OLIVE_DRAB, false, 2)
-		# Quadrant 5 (Top Left)
-		draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) - vertical_pan_margin), Color.WEB_PURPLE, false, 2)
-		# Quadrant 6 (Top Right)
-		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.ROSY_BROWN, false, 2)
-		# Quadrant 7 (Bottom Left)
-		draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, (viewport_size.x / 2) - horizontal_pan_margin, viewport_size.y), Color.SANDY_BROWN, false, 2)
-		# Quadrant 8 (Bottom Right)
-		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, viewport_size.y), Color.GAINSBORO, false, 2)
 
 func handle_panning(delta):
 	if not is_panning:
@@ -97,20 +82,69 @@ func _input(event):
 	# Update viewport size on window resize
 	viewport_size = get_viewport().get_visible_rect().size
 	
-	# Handle mouse wheel zoom
 	if event is InputEventMouseButton:
+		# Handle mouse selection interaction
+		if event.is_action_pressed("interaction"):
+			# Begin selection
+			mouse_selection = true
+			initial_selection_position = event.position
+			print(initial_selection_position)
+		elif event.is_action_released("interaction"):
+			# End selection
+			mouse_selection = false
+			final_selection_position = event.position
+			print(final_selection_position)
+		# Handle mouse wheel zoom
 		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 			# Zoom in with mouse wheel down
 			target_zoom = Vector2.ONE * clamp(target_zoom.x - zoom_speed, min_zoom, max_zoom)
 		elif event.button_index == MOUSE_BUTTON_WHEEL_UP:
 			# Zoom out with mouse wheel up
 			target_zoom = Vector2.ONE * clamp(target_zoom.x + zoom_speed, min_zoom, max_zoom)
-	
+	elif event is InputEventMouseMotion:
+		mouse_position = event.position
+		if mouse_selection:
+			queue_redraw()
+		print("Mouse Motion at: ", event.position)
+
+	# Toggle panning mechanic on camera
 	if event.is_action_pressed("toggle_pan"):
 		is_panning = !is_panning
 		print("ACTION PRESSED: Toggle camera pan - [STATUS ", is_panning, "]")
 		
+	# Toggle visual outlines used for debugging camera pan margins
 	if event.is_action_pressed("toggle_debug"):
 		debug_outlines = !debug_outlines
 		queue_redraw()
 		print("ACTION PRESSED: Toggle camera debug outlines - [STATUS ", debug_outlines, "]")
+
+func _draw():
+	if mouse_selection:
+		# Calculate the rectangle between initial click and current mouse position
+		var rect_pos = Vector2(
+			min(initial_selection_position.x, mouse_position.x),
+			min(initial_selection_position.y, mouse_position.y)
+		)
+		var rect_size = Vector2(
+			abs(mouse_position.x - initial_selection_position.x),
+			abs(mouse_position.y - initial_selection_position.y)
+		)
+		draw_rect(Rect2(rect_pos, rect_size), Color.MEDIUM_AQUAMARINE, false, 2)
+		
+	if debug_outlines:
+		# Quadrant 1 (Top)
+		draw_rect(Rect2(1, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MEDIUM_AQUAMARINE, false, 2)
+		# Quadrant 2 (Left)
+		draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.YELLOW, false, 2)
+		# Quadrant 3 (Bottom)
+		draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.MAROON, false, 2)
+		# Quadrant 4 (Right)
+		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin), Color.OLIVE_DRAB, false, 2)
+		# Quadrant 5 (Top Left)
+		draw_rect(Rect2(1, 1, (viewport_size.x / 2) - horizontal_pan_margin, (viewport_size.y / 2) - vertical_pan_margin), Color.WEB_PURPLE, false, 2)
+		# Quadrant 6 (Top Right)
+		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, 1, viewport_size.x, (viewport_size.y / 2) - vertical_pan_margin), Color.ROSY_BROWN, false, 2)
+		# Quadrant 7 (Bottom Left)
+		draw_rect(Rect2(1, (viewport_size.y / 2) + vertical_pan_margin, (viewport_size.x / 2) - horizontal_pan_margin, viewport_size.y), Color.SANDY_BROWN, false, 2)
+		# Quadrant 8 (Bottom Right)
+		draw_rect(Rect2((viewport_size.x / 2) + horizontal_pan_margin, (viewport_size.y / 2) + vertical_pan_margin, viewport_size.x, viewport_size.y), Color.GAINSBORO, false, 2)
