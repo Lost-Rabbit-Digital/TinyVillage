@@ -8,6 +8,7 @@ extends Camera2D
 @export var zoom_speed: float = 0.1  # How fast to zoom with scroll wheel
 @export var zoom_key_speed: float = 1.0  # How fast to zoom with keys per second
 @export var debug_outlines: bool = false
+@export var camera_zoom: bool = false
 
 var viewport_size: Vector2
 var is_panning: bool = true
@@ -21,7 +22,8 @@ func _ready():
 func _process(delta):
 	handle_panning(delta)
 	handle_key_zoom(delta)
-	smooth_zoom(delta)
+	if camera_zoom:
+		smooth_zoom(delta)
 
 func _draw():
 	if debug_outlines:
@@ -48,10 +50,6 @@ func handle_panning(delta):
 		
 	var mouse_pos = get_viewport().get_mouse_position()
 	var pan_direction = Vector2.ZERO
-	
-	# Get screen dimensions
-	
-	
 	
 	# Check which quadrant the mouse is in and set pan direction
 	# Quadrant 1 (Top Right)
