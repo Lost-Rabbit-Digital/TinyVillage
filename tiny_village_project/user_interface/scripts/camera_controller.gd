@@ -88,12 +88,14 @@ func _input(event):
 			# Begin selection
 			mouse_selection = true
 			initial_selection_position = event.position
-			print(initial_selection_position)
+			print("ACTION PRESSED: Mouse selection begin - [STATUS ", mouse_selection, "]")
+			print("ACTION LOCATION: ", initial_selection_position)
 		elif event.is_action_released("interaction"):
 			# End selection
 			mouse_selection = false
 			final_selection_position = event.position
-			print(final_selection_position)
+			print("ACTION PRESSED: Mouse selection finish - [STATUS ", mouse_selection, "]")
+			print("ACTION LOCATION: ", final_selection_position)
 		# Handle mouse wheel zoom
 		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 			# Zoom in with mouse wheel down
@@ -105,7 +107,7 @@ func _input(event):
 		mouse_position = event.position
 		if mouse_selection:
 			queue_redraw()
-		print("Mouse Motion at: ", event.position)
+		#print("Mouse Motion at: ", event.position)
 
 	# Toggle panning mechanic on camera
 	if event.is_action_pressed("toggle_pan"):
