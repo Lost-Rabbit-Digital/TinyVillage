@@ -87,6 +87,9 @@ We welcome contributions!
 - New art
 - Localization
 
+# Note to Future Main Developers
+- This is a pretty sick art asset right? Might wanna consider it: https://artyom-zagorskiy.itch.io/isometric-medieval-pack
+
 ## License
 [LICENSE.md](LICENSE.md)
 
