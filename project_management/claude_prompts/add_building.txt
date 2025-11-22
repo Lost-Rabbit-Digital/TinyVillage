@@ -1,0 +1,43 @@
+PROMPT: Add New Building to Tiny Village
+
+Help me add a new building to Tiny Village. Follow these steps:
+
+1. ASK ME FOR DETAILS:
+   - Building name and description
+   - Building category (residential, resource, decoration, special)
+   - Resource costs (wood, stone, metal, fiber, etc.)
+   - Grid size (1x1, 2x2, 3x3, etc.)
+   - Special abilities or effects (if any)
+   - Visual style preferences
+   - Is this part of base game or DLC?
+
+2. IMPLEMENT THE BUILDING:
+   - Create GDScript scene file in tiny_village_project/scenes/buildings/
+   - Create building data resource
+   - Add to building registry/catalog system
+   - Implement placement logic with grid snapping
+   - Add rotation support (90° increments)
+   - Add visual placeholder (colored rectangle if no art yet)
+   - Include proper layering for top-down/isometric view
+
+3. ENSURE COZY GAME PRINCIPLES:
+   - Satisfying placement feedback (sound, visual confirmation)
+   - Clear visual indicators for valid/invalid placement
+   - No harsh colors unless explicitly requested
+   - Intuitive controls
+   - Undo/redo support
+
+4. UPDATE DOCUMENTATION:
+   - Add building to internal building list
+   - Document resource costs and unlock requirements
+   - Note any DLC association
+   - Add to relevant design docs
+
+5. CREATE TEST PLAN:
+   - Test placement in various scenarios
+   - Test rotation functionality
+   - Verify resource costs deduct correctly
+   - Test in multiplayer if applicable
+   - Ensure it aligns with cozy aesthetic
+
+Follow existing code patterns in tiny_village_project/ and reference the game design document at project_management/project_direction/game_design_document.md

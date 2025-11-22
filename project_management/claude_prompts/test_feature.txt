@@ -1,0 +1,101 @@
+PROMPT: Create Comprehensive Test Plan for Feature
+
+Help me thoroughly test a feature in Tiny Village. Follow these steps:
+
+1. IDENTIFY FEATURE TO TEST:
+   - Feature name and description
+   - What components/systems are involved?
+   - What is the expected behavior?
+   - What edge cases exist?
+   - What could potentially go wrong?
+
+2. CREATE TEST CASES:
+
+   HAPPY PATH (Normal Usage):
+   - Standard user flow
+   - Expected inputs and outputs
+   - Typical scenarios
+
+   EDGE CASES:
+   - Boundary conditions
+   - Empty states
+   - Maximum values
+   - Minimum values
+   - Null/undefined handling
+
+   ERROR CASES:
+   - Invalid input handling
+   - Missing resources/data
+   - Network failures (if applicable)
+   - Permission issues
+   - Concurrent operations
+
+   INTEGRATION TESTING:
+   - How does it work with other systems?
+   - Save/load compatibility
+   - Settings interactions
+   - UI state management
+
+3. COZY GAME SPECIFIC TESTS:
+   - Maintains relaxing, stress-free atmosphere?
+   - No harsh error messages or punishing feedback?
+   - Clear, gentle feedback on all actions?
+   - Graceful error handling (no crashes)?
+   - Undo/redo support where applicable?
+   - No time pressure or anxiety-inducing mechanics?
+   - Accessible to casual players?
+
+4. PERFORMANCE TESTING:
+   - Frame rate impact (target: 60 FPS)
+   - Memory usage
+   - Load times
+   - Performance with large villages
+   - Multiple instances stress test
+   - Long-running session stability
+
+5. ACCESSIBILITY TESTING:
+   - Keyboard navigation
+   - Colorblind modes
+   - Text readability
+   - Screen reader compatibility (if applicable)
+   - One-handed mode
+   - Adjustable settings respected
+
+6. MULTIPLAYER TESTS (if applicable):
+   - Host behavior
+   - Guest/client behavior
+   - Synchronization between players
+   - Disconnect and reconnect handling
+   - DLC ownership differences
+   - Lag/latency scenarios
+
+7. CROSS-PLATFORM TESTS (future):
+   - Windows
+   - macOS
+   - Linux
+   - Steam Deck
+   - Different screen resolutions
+
+8. AUTOMATED TESTING:
+   - Create GDScript unit tests where applicable
+   - Integration test scripts
+   - Performance benchmarks
+   - Document manual testing steps for non-automatable tests
+
+9. GENERATE TEST REPORT:
+   Include:
+   - Complete test case list
+   - Pass/fail status for each
+   - Bug reports for any failures
+   - Performance metrics
+   - Screenshots/videos of issues
+   - Severity ratings (critical, major, minor)
+   - Recommendations for fixes
+   - Retest verification plan
+
+10. REGRESSION TESTING:
+    - Verify fix doesn't break existing features
+    - Check related systems still work
+    - Validate save file compatibility
+
+Provide detailed test documentation and prioritized list of any issues found.

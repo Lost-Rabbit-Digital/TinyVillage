@@ -1,0 +1,198 @@
+PROMPT: Design UI Following Cozy Game Principles
+
+Help me design or improve UI elements for Tiny Village following cozy game principles. Follow these steps:
+
+1. IDENTIFY UI ELEMENT:
+   - What screen/component? (main menu, HUD, shop, settings, building menu, etc.)
+   - What is the primary user goal?
+   - What information needs to be displayed?
+   - What actions are available?
+   - What is the usage context? (during gameplay, pause screen, etc.)
+
+2. COZY UI PRINCIPLES:
+
+   MINIMAL:
+   - Only show what's needed right now
+   - Hide complexity behind clear interaction
+   - Progressive disclosure of advanced features
+   - Clean, uncluttered layouts
+
+   CLEAR:
+   - No ambiguity in button function
+   - Obvious interaction affordances
+   - Immediate, visible feedback
+   - Consistent patterns throughout game
+
+   WARM:
+   - Inviting color palette
+   - Soft edges and rounded corners
+   - Friendly, approachable aesthetic
+   - Khoswa-Kian orange/blue accents tastefully used
+
+   ACCESSIBLE:
+   - Large touch targets (min 44x44px)
+   - Readable text with good contrast
+   - Works with keyboard navigation
+   - Screen reader friendly structure
+   - Colorblind safe
+
+   FORGIVING:
+   - Easy undo functionality
+   - No destructive actions without confirmation
+   - Autosave and recovery
+   - Clear cancel options
+
+   DELIGHTFUL:
+   - Subtle animations (smooth, not jarring)
+   - Satisfying feedback (sounds, haptics)
+   - Easter eggs and personality
+   - Attention to detail
+
+3. DESIGN CONSIDERATIONS:
+
+   COLOR PALETTE:
+   - Primary: Warm neutrals (cream, soft tan, paper texture)
+   - Accent: Khoswa-Kian orange and blue (sparingly)
+   - Background: Inviting, not stark white
+   - Text: High contrast but not harsh
+   - Success: Warm greens
+   - Warning: Soft oranges (not alarming)
+   - Error: Gentle reds (not aggressive)
+
+   TYPOGRAPHY:
+   - Readable, friendly font (not too formal)
+   - Clear hierarchy (title, body, caption)
+   - Sufficient line height
+   - Good letter spacing
+   - Size adjustable in settings
+
+   ICONOGRAPHY:
+   - Simple, recognizable symbols
+   - Consistent style (doodle or minimal)
+   - Clear at small sizes
+   - Works in monochrome
+   - Text labels for clarity
+
+   LAYOUT:
+   - Logical flow (F-pattern for reading)
+   - Breathing room (generous padding)
+   - Clear visual hierarchy
+   - Responsive to different screen sizes
+   - Grid-based alignment
+
+   FEEDBACK:
+   - Hover states (brightness, scale, outline)
+   - Click/press feedback (immediate response)
+   - Success confirmations (gentle, brief)
+   - Loading indicators (when needed)
+   - Progress visibility
+
+4. ACCESSIBILITY:
+
+   VISUAL:
+   - Contrast ratio WCAG AA minimum (4.5:1 for text)
+   - Don't rely on color alone
+   - Support colorblind modes
+   - Adjustable text size
+   - High contrast mode option
+
+   INTERACTION:
+   - Full keyboard navigation
+   - Logical tab order
+   - Clear focus indicators
+   - Gamepad support
+   - One-handed mode friendly
+
+   COGNITIVE:
+   - Simple, clear language
+   - Avoid jargon
+   - Icons with text labels
+   - Consistent patterns
+   - Tutorial by doing
+
+5. REFERENCE EXISTING UI:
+   - Check tiny_village_project/user_interface/ for patterns
+   - Maintain consistency with existing screens
+   - Reuse components where possible
+   - Follow Godot UI best practices
+   - Check background_color_manager.gd for theme system
+
+6. CREATE UI DESIGN SPECIFICATION:
+
+   LAYOUT STRUCTURE:
+   - Wireframe or description
+   - Component hierarchy
+   - Spacing and alignment
+   - Responsive behavior
+
+   VISUAL DESIGN:
+   - Color scheme with hex codes
+   - Typography specifications
+   - Icon designs or references
+   - Animation descriptions
+
+   INTERACTIVE ELEMENTS:
+   - Buttons and their states
+   - Input fields
+   - Dropdowns and menus
+   - Toggles and checkboxes
+   - Sliders and controls
+
+   BEHAVIOR:
+   - Navigation flow
+   - State transitions
+   - Animation timing
+   - Sound effects
+   - Error handling
+
+   EDGE CASES:
+   - Empty states
+   - Loading states
+   - Error states
+   - Overflow content
+   - Different resolutions
+
+7. IMPLEMENTATION PLAN:
+
+   GODOT SCENE STRUCTURE:
+   - Control node hierarchy
+   - Container types (VBox, HBox, etc.)
+   - Theme resource usage
+   - Script attachments
+
+   REQUIRED SCRIPTS:
+   - Input handling
+   - State management
+   - Data binding
+   - Animations
+
+   ASSET NEEDS:
+   - Icons (list specifics)
+   - Background images
+   - UI sprites
+   - Sound effects
+
+   INTEGRATION:
+   - Where does this fit in scene tree?
+   - What signals does it emit/receive?
+   - Save/load considerations
+   - Localization hooks
+
+8. TESTING CHECKLIST:
+   - Visual appearance at different resolutions
+   - Keyboard navigation flow
+   - Gamepad input
+   - Colorblind modes
+   - Touch input (future mobile)
+   - Performance (60 FPS maintained)
+   - Localization (text overflow handling)
+
+9. REVIEW AGAINST GAME DESIGN:
+   - Supports cozy game core pillars?
+   - Steam Deck friendly?
+   - Works in different resolutions (1920x1080, 1280x720, 1024x600)?
+   - Handles localization (text expansion)?
+   - Accessible to target audience?
+   - Maintains relaxing atmosphere?
+
+Generate detailed UI design specification with mockups/descriptions and implementation notes ready for development.

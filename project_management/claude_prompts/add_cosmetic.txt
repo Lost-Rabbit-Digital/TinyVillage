@@ -1,0 +1,63 @@
+PROMPT: Add Cosmetic Microtransaction Item
+
+Help me add a new cosmetic item to Tiny Village's in-game shop following ethical F2P principles. Follow these steps:
+
+1. GATHER COSMETIC DETAILS:
+   - Item type: Villager outfit, building skin, decoration, color palette, or accessory?
+   - Visual description and theme
+   - Category: Seasonal, fantasy, modern, historical, etc.?
+   - Pricing tier: $0.99, $1.99, $2.99, or $4.99?
+   - Stardust price (premium currency equivalent)
+   - Part of a themed set or standalone item?
+   - Can it be earned through gameplay? How?
+
+2. ETHICAL MONETIZATION VERIFICATION:
+   Before implementing, verify:
+   ✓ Provides ZERO gameplay advantage
+   ✓ Purely cosmetic/aesthetic value only
+   ✓ Fair pricing for what it offers
+   ✓ Can be earned through gameplay OR purchased (dual path)
+   ✓ NO loot box or random chance mechanics
+   ✓ Clear preview before purchase (try-on system)
+   ✓ Similar items exist in free content (no category paywalling)
+
+3. IMPLEMENTATION:
+   - Create visual asset or placeholder in tiny_village_project/assets/cosmetics/
+   - Add to shop catalog system
+   - Implement preview/try-on functionality
+   - Create purchase flow with clear pricing
+   - Handle ownership tracking and persistence
+   - Sync across save files and Steam Cloud
+   - Implement "unlock through gameplay" alternative path
+
+4. SHOP UI INTEGRATION:
+   - Create appealing thumbnail/icon
+   - Write honest, compelling description (no false promises)
+   - Show preview of item in actual use context
+   - Display both real money AND Stardust prices clearly
+   - Add "Try before you buy" preview button
+   - Show similar free alternatives in shop
+
+5. FREE ALTERNATIVE CHECK:
+   Critical requirement:
+   - Confirm similar style items exist in base game
+   - Ensure no entire content category is paywalled
+   - Verify free players have sufficient variety
+   - Check that base game feels complete without this item
+
+6. TESTING:
+   - Test purchase flow (both currency types)
+   - Verify item applies correctly to character/building
+   - Test refund functionality (if applicable)
+   - Check visibility in multiplayer
+   - Validate pricing display is accurate
+   - Test earning through gameplay path
+   - Verify persistence across sessions
+
+7. DOCUMENTATION:
+   - Add to game design doc monetization section
+   - Note in cosmetics catalog
+   - Document unlock conditions (both purchase and gameplay)
+   - Add to marketing materials if part of larger pack
+
+Reference ethical F2P principles in project_management/project_direction/game_design_document.md before proceeding.

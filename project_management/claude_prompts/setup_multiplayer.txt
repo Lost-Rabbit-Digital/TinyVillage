@@ -1,0 +1,157 @@
+PROMPT: Implement Multiplayer Co-op for Tiny Village
+
+Help me implement or debug multiplayer/co-op features for Tiny Village. Follow these steps:
+
+1. MULTIPLAYER SCOPE:
+   From game design document:
+   - Co-op mode for up to 4 players
+   - Peer-to-peer networking (no dedicated servers)
+   - Shared village building (collaborative)
+   - Host/client architecture
+   - DLC compatibility (host has DLC, guests can visit)
+   - Steam integration for invites/lobbies
+
+2. GODOT MULTIPLAYER SETUP:
+   - Review Godot 4.x multiplayer API and ENet
+   - Set up peer-to-peer networking (MultiplayerPeer)
+   - Implement host/client architecture (MultiplayerAPI)
+   - Create lobby system (players can find/join games)
+   - Handle player connections and disconnections gracefully
+   - Implement player ID system
+
+3. SYNCHRONIZATION REQUIREMENTS:
+
+   MUST SYNC:
+   - Building placement/deletion (immediate)
+   - Resource collection/spending (immediate)
+   - Villager spawning and assignments (immediate)
+   - Weather and time of day (periodic)
+   - Player positions and camera views (frequent)
+   - World generation seed (on connect)
+
+   NICE TO SYNC:
+   - Cursor positions for other players
+   - Player actions/emotes
+   - Chat messages
+
+   DON'T SYNC:
+   - Camera zoom level (local preference)
+   - UI state (local)
+   - Settings (local)
+
+4. DLC HANDLING:
+   Critical for fair play:
+   - Host DLC content visible to ALL players
+   - Guests without DLC can SEE but not place DLC buildings
+   - Graceful degradation for missing content (placeholder sprites?)
+   - No crashes due to DLC mismatch
+   - Clear indicators of DLC-exclusive items
+   - Guests can interact with host's DLC content
+
+5. COZY MULTIPLAYER FEATURES:
+   Maintain stress-free experience:
+   - No griefing: Players can't destroy each other's work
+   - Collaborative building (shared resources or separate?)
+   - Permissions system (optional, for host control)
+   - Shared achievement progress
+   - Cooperative goals and celebrations
+   - Screenshot mode includes all players
+   - No competitive elements (this is cozy co-op)
+
+6. UI FOR MULTIPLAYER:
+
+   MAIN MENU:
+   - "Host Game" button
+   - "Join Game" button
+   - "Invite Friends" (Steam integration)
+   - Recent players list
+
+   LOBBY:
+   - Player list with ready status
+   - Host controls (kick, start, settings)
+   - Invite system
+   - Connection status indicators
+   - DLC ownership indicators
+
+   IN-GAME:
+   - Player list/positions on minimap
+   - Multiplayer status icon
+   - Connection quality indicator
+   - Pause menu with disconnect option
+   - Chat interface (text + emotes)
+
+7. NETWORKING ARCHITECTURE:
+
+   HOST RESPONSIBILITIES:
+   - Authoritative game state
+   - World generation
+   - Save/load
+   - Player connection management
+   - Synchronization timing
+
+   CLIENT RESPONSIBILITIES:
+   - Send input to host
+   - Predict local actions (optimistic)
+   - Apply host corrections
+   - Render other players
+
+   RPC CALLS:
+   - Building placement: @rpc("any_peer", "call_remote")
+   - Resource updates: @rpc("authority", "call_remote")
+   - Player movement: @rpc("any_peer", "unreliable")
+
+8. TESTING SCENARIOS:
+
+   BASIC:
+   - 2 players (minimal test)
+   - 4 players (maximum capacity)
+   - Same room (LAN)
+   - Different networks (internet)
+
+   EDGE CASES:
+   - Host disconnects mid-game
+   - Guest disconnects and rejoins
+   - Poor connection (high latency, packet loss)
+   - DLC ownership variations
+   - Save/load with different players
+
+   STRESS:
+   - Rapid building by all players
+   - Large village with many villagers
+   - Multiple biomes loaded
+   - Weather effects active
+
+9. PERFORMANCE OPTIMIZATION:
+   - Minimize network traffic
+   - Compress state updates
+   - Reduce sync frequency for non-critical data
+   - Use unreliable RPCs for frequent updates (movement)
+   - Batch updates where possible
+   - Prioritize visible/nearby updates
+   - Handle lag gracefully (interpolation, prediction)
+   - Maintain 60 FPS for all players
+
+10. ERROR HANDLING:
+    - Connection timeout (friendly message, not crash)
+    - Desync detection and recovery
+    - Version mismatch handling
+    - Graceful fallback to single-player
+    - Save game on disconnect
+    - Clear error messages (no technical jargon)
+
+11. SAVE SYSTEM:
+    - Host owns the save file
+    - Guests don't create saves (host's world)
+    - Progress tracked for all players
+    - Handle guests rejoining (restore position?)
+    - Save on disconnect (host)
+
+12. DOCUMENTATION:
+    - Multiplayer architecture notes
+    - Network protocol documentation
+    - Known limitations
+    - Future improvements roadmap
+    - Testing procedures
+    - Common issues and solutions
+
+Implement or debug multiplayer features while maintaining the cozy, stress-free cooperative experience that Tiny Village is built on.

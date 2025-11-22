@@ -1,0 +1,125 @@
+PROMPT: Optimize Performance for Tiny Village
+
+Help me analyze and optimize Tiny Village's performance to maintain smooth, cozy gameplay. Follow these steps:
+
+1. PERFORMANCE AUDIT:
+   - Identify current performance bottlenecks
+   - Check frame rate in various scenarios
+   - Monitor memory usage and leaks
+   - Profile script execution (Godot profiler)
+   - Check asset loading times
+   - Analyze draw calls and rendering
+   - Test on minimum spec hardware
+
+2. TARGET SPECIFICATIONS:
+   From game design document:
+   - 60 FPS on integrated graphics (minimum)
+   - Smooth on 2GB RAM systems
+   - Fast loading: < 3 seconds to main menu
+   - Responsive UI with no input lag
+   - Minimal memory footprint (< 500MB)
+   - Battery efficient (for Steam Deck, laptops)
+
+3. OPTIMIZATION AREAS:
+
+   RENDERING:
+   - Sprite batching and atlasing
+   - Occlusion culling for off-screen objects
+   - Level of Detail (LOD) for distant buildings
+   - Particle system efficiency
+   - Reduce overdraw
+   - Optimize shaders
+   - Use CanvasItem batching
+
+   SCRIPTS:
+   - Reduce polling, use signals instead
+   - Optimize pathfinding algorithms
+   - Cache expensive calculations
+   - Async loading where possible
+   - Object pooling for frequently created/destroyed objects
+   - Lazy initialization
+   - Reduce _process() and _physics_process() usage
+
+   ASSETS:
+   - Texture compression (lossy where acceptable)
+   - Audio compression
+   - Remove unused assets from builds
+   - Texture atlas optimization
+   - Reduce texture resolution where not noticeable
+   - Use sprite sheets
+
+   MEMORY:
+   - Fix memory leaks
+   - Unload unused resources
+   - Stream large assets
+   - Reduce global resource cache
+
+4. COZY GAME CONSIDERATIONS:
+   Critical for maintaining cozy feel:
+   - Smooth, butter-like experience (no stutters)
+   - No sudden frame drops (jarring and stressful)
+   - Consistent performance (no spikes)
+   - Quick save/load (no anxiety)
+   - Instant UI response (satisfying feedback)
+   - Seamless transitions and animations
+
+5. TESTING SCENARIOS:
+   Test performance in:
+   - Small village (early game, 10-20 buildings)
+   - Medium village (mid game, 50-100 buildings)
+   - Large village (late game, 200+ buildings)
+   - Multiple biomes loaded simultaneously
+   - Weather effects active
+   - Multiple villagers with pathfinding
+   - Multiplayer with 4 players
+   - Long play sessions (memory stability)
+
+6. PROFILING:
+   Use Godot profiler to identify:
+   - CPU bottlenecks (top 10 functions)
+   - GPU bottlenecks (draw calls, shaders)
+   - Memory allocations
+   - Script execution time
+   - Physics calculations
+   - Rendering pipeline
+
+7. GENERATE OPTIMIZATION REPORT:
+
+   CURRENT PERFORMANCE:
+   - FPS in various scenarios
+   - Memory usage
+   - Load times
+   - Key metrics
+
+   IDENTIFIED BOTTLENECKS:
+   - Ranked by impact
+   - Root cause analysis
+   - Code location
+
+   PROPOSED OPTIMIZATIONS:
+   - Prioritized by impact vs. effort
+   - Expected improvements
+   - Implementation complexity
+   - Trade-offs to consider
+
+   METRICS:
+   - Before/after comparisons
+   - Performance gains
+   - Quality impact (if any)
+
+8. IMPLEMENT TOP OPTIMIZATIONS:
+   - Start with highest-impact, lowest-effort wins
+   - Measure before and after each change
+   - Document all changes
+   - Ensure no visual regressions
+   - Test on target hardware
+   - Verify cozy feel maintained
+
+9. LONG-TERM PERFORMANCE STRATEGY:
+   - Regular profiling schedule
+   - Performance budgets for new features
+   - Automated performance testing
+   - Minimum spec validation
+   - Steam Deck optimization
+
+Performance should NEVER compromise the cozy, smooth experience. Frame drops and stutters create stress, which violates core game principles.

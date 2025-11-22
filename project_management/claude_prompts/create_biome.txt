@@ -1,0 +1,50 @@
+PROMPT: Create New Biome for Tiny Village
+
+Help me create a new biome for Tiny Village. Follow these steps:
+
+1. GATHER BIOME SPECIFICATIONS:
+   - Biome name and theme
+   - Color palette (must be cozy and inviting, not harsh)
+   - Resource types available in this biome
+   - Unique features or landmarks
+   - Weather patterns specific to this biome
+   - Music/ambiance style
+   - Is this free content or DLC? (check game design doc monetization section)
+
+2. IMPLEMENT PROCEDURAL GENERATION:
+   - Create terrain generation script in tiny_village_project/environment/
+   - Define tile types and their distribution probabilities
+   - Add resource spawn points (wood, stone, special items)
+   - Implement smooth biome boundaries/transitions
+   - Add points of interest (ancient ruins, resource deposits, NPC settlements)
+   - Ensure no harsh difficulty spikes (this is a cozy game)
+
+3. VISUAL ELEMENTS:
+   - Background layers for parallax scrolling
+   - Terrain textures/colors matching the palette
+   - Environmental objects (trees, rocks, plants, etc.)
+   - Weather effects (rain, snow, fog - all aesthetic, not punishing)
+   - Lighting adjustments to create atmosphere
+   - Color palette should use warm, inviting tones
+
+4. GAME BALANCE:
+   - Ensure resource availability is fair
+   - No punishing mechanics or fail states
+   - Optional challenges, not required ones
+   - Progression-appropriate for when players unlock this biome
+   - Consider what phase of roadmap this fits into
+
+5. INTEGRATION:
+   - Add biome to world generation system
+   - Create unlock conditions (level, story milestone, DLC ownership)
+   - Ensure multiplayer compatibility
+   - Test performance with multiple biomes loaded
+
+6. DOCUMENTATION:
+   - Add biome to game design document
+   - Note unlock requirements
+   - List exclusive resources/buildings for this biome
+   - Document for potential DLC packaging if not base game
+   - Add to internal reference materials
+
+Reference game design document sections on biomes and ensure alignment with cozy game core pillars.

@@ -1,0 +1,108 @@
+PROMPT: Plan Development Sprint from Roadmap
+
+Help me plan the next development sprint for Tiny Village based on the roadmap in project_management/project_direction/game_design_document.md. Follow these steps:
+
+1. REVIEW CURRENT STATUS:
+   - Check game design document roadmap section
+   - Identify current development phase (Phase 1-8)
+   - Review completed items vs. remaining items
+   - Assess any blockers or technical debt
+   - Note recent progress and velocity
+
+2. SPRINT PLANNING:
+   - Sprint duration: 1 week, 2 weeks, or 1 month?
+   - Available development time (hours/day)
+   - Team capacity (solo dev, contractors available?)
+   - Priority features from roadmap for this phase
+   - Dependencies between tasks
+   - MVP features vs. polish items
+
+3. TASK BREAKDOWN:
+   For each feature, break into:
+   - Concrete, actionable tasks
+   - Effort estimate (hours or days)
+   - Dependencies (what must complete first?)
+   - Parallel vs. sequential work identification
+   - Research or learning time needed
+   - Potential risks or unknowns
+
+4. PRIORITIZATION:
+   Categorize each task:
+
+   MUST-HAVE (Sprint Goal):
+   - Blocks other critical work
+   - Core functionality for current phase
+   - User-facing blockers
+
+   SHOULD-HAVE:
+   - Important for phase completion
+   - Significant value add
+   - Manageable risk if deferred
+
+   NICE-TO-HAVE:
+   - Polish and refinement
+   - Can defer to later sprint
+   - Low risk items
+
+   TECHNICAL DEBT:
+   - Refactoring needed
+   - Performance improvements
+   - Code quality issues
+
+5. RESOURCE PLANNING:
+   - Solo development tasks (GDScript, systems)
+   - Contract work needed (art, music, SFX)
+   - Community feedback to gather
+   - Testing requirements (QA time)
+   - Documentation needs
+   - Budget considerations
+
+6. GENERATE SPRINT DOCUMENT:
+
+   SPRINT GOAL:
+   - Clear 1-2 sentence goal
+   - What "done" looks like
+   - User-facing value delivered
+
+   TASK LIST:
+   - Organized by priority
+   - With time estimates
+   - Assigned to team members (if applicable)
+   - Dependencies noted
+
+   DAILY/WEEKLY MILESTONES:
+   - Week 1 goals
+   - Week 2 goals (if applicable)
+   - Mid-sprint checkpoints
+
+   RISK MITIGATION:
+   - Identified risks
+   - Mitigation strategies
+   - Backup plans
+
+   DEFINITION OF DONE:
+   - Acceptance criteria for each task
+   - Testing requirements
+   - Documentation requirements
+
+7. ALIGN WITH GAME VISION:
+   - Verify tasks support cozy game core pillars
+   - Check monetization ethics (if applicable)
+   - Ensure accessibility considerations included
+   - Maintain scope discipline (avoid feature creep)
+   - Reference game design doc frequently
+
+8. SPRINT METRICS:
+   - Planned capacity (hours)
+   - Number of tasks
+   - Story points (if using)
+   - Expected completion date
+   - Buffer time (15-20% recommended)
+
+9. STAKEHOLDER COMMUNICATION:
+   - What to share publicly (devlog, social media)
+   - What to keep internal
+   - Community engagement opportunities
+   - Marketing moments
+
+Create a clear, actionable sprint plan that moves toward the next roadmap milestone while maintaining sustainable development pace.
