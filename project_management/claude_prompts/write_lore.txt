@@ -1,0 +1,92 @@
+PROMPT: Write Lore Content for Tiny Village
+
+Help me create lore content for Tiny Village that fits the cozy, whimsical tone. Follow these steps:
+
+1. UNDERSTAND THE CONTEXT:
+   - Review existing Khoswa-Kian lore in project_management/lore.md
+   - Understand the time-loop paradox narrative
+   - Note the tone: whimsical, lighthearted, occasionally philosophical
+   - Remember: ALL lore is optional, never forced on players
+   - Reference "Tiny Village" ship and civilization bootstrap story
+
+2. DETERMINE LORE TYPE:
+   What kind of lore content?
+   - Environmental storytelling (ruins, artifacts, inscriptions)
+   - Collectible lore fragments (journal entries, tablets)
+   - Character backstories (Khoswa-Kian crew members)
+   - Villager dialogue (ambient, contextual)
+   - Quest descriptions (optional story missions)
+   - Item descriptions (tools, buildings, special items)
+   - Chapter narratives (for story DLC)
+   - Seasonal event stories
+
+3. WRITING GUIDELINES:
+
+   TONE:
+   - Whimsical and lighthearted (like existing lore)
+   - Self-aware humor (cosmic maintenance, time paradoxes)
+   - Gentle, never dark or grim
+   - Occasionally philosophical but accessible
+   - Warm and inviting
+
+   LENGTH:
+   - Short and digestible (2-4 paragraphs max)
+   - Can be skipped without missing gameplay
+   - Optional deep dives for interested players
+
+   ACCESSIBILITY:
+   - No complex jargon or technical language
+   - Easy to understand on first read
+   - Clear, friendly voice
+   - Can be enjoyed by casual players
+
+   STYLE:
+   - Present tense for immediate experiences
+   - Past tense for historical fragments
+   - First or third person depending on context
+
+4. KHOSWA-KIAN VOICE:
+   Maintain species characteristics:
+   - Small (2 feet tall), practical engineers
+   - Mint-green skin, large black eyes
+   - Orange and blue environmental suits (garish but beloved)
+   - "Cosmic maintenance" philosophy
+   - Time-loop causality awareness (but casual about it)
+   - Love of "perfectly-pressed suit cuffs" and proper maintenance
+   - Friendly, optimistic, slightly absurd
+   - Human interaction (mutual confusion and respect)
+
+5. INTEGRATION PLANNING:
+   - How is this lore discovered? (exploration, achievements, random events)
+   - Does it unlock anything? (cosmetics, buildings, achievements)
+   - Is it part of base game or DLC?
+   - How much should be revealed vs. left mysterious?
+   - Does it connect to other lore pieces?
+   - Is it missable or guaranteed?
+
+6. NARRATIVE THEMES TO EXPLORE:
+   - Time paradoxes and bootstrap causality
+   - Building civilization from scratch
+   - Environmental engineering
+   - Cultural rituals around maintenance
+   - Relationship between past and future selves
+   - Cosmic perspective with mundane concerns
+   - Khoswa-Kian humor and priorities
+
+7. REVIEW AGAINST EXISTING CONTENT:
+   - Check consistency with established lore
+   - Verify tone matches existing writing style
+   - Ensure it enhances cozy vibe (doesn't distract from it)
+   - Confirm it's truly optional content
+   - No contradictions with canon
+
+8. EXAMPLE FORMAT FOR DELIVERABLE:
+   - Title/identifier
+   - Lore type
+   - Trigger/discovery method
+   - Full text content
+   - Integration notes
+   - Related lore pieces
+   - DLC association (if applicable)
+
+Generate lore content that adds depth for interested players while remaining completely optional and maintaining the cozy, whimsical atmosphere of Tiny Village.

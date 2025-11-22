@@ -1,0 +1,78 @@
+PROMPT: Review Code/Features Against Cozy Game Principles
+
+Review the recent changes or specified code/features against Tiny Village's cozy game design principles from project_management/project_direction/game_design_document.md:
+
+1. CORE PILLARS CHECK:
+
+   COZY & ACCESSIBLE:
+   - Is it low-stress? No time pressure?
+   - No fail states or punishing mechanics?
+   - Intuitive controls and interactions?
+   - Clear, gentle feedback on actions?
+
+   CREATIVE EXPRESSION:
+   - Does it enhance player creativity?
+   - Multiple valid approaches/solutions?
+   - Room for personal style and expression?
+
+   MEANINGFUL PROGRESSION:
+   - Rewarding without grinding?
+   - Natural, satisfying advancement?
+   - No artificial gates or tedium?
+
+   SIMPLE DEPTH:
+   - Easy to learn at first glance?
+   - Engaging for continued play?
+   - Optional complexity for those who want it?
+
+2. ACCESSIBILITY REVIEW:
+   - Can be understood without lengthy tutorials?
+   - Controls are intuitive and responsive?
+   - Visual feedback is clear and immediate?
+   - Colorblind considerations (don't rely on color alone)?
+   - Text is readable with good contrast?
+   - Appropriate text sizing?
+   - Keyboard navigation support?
+   - One-handed mode friendly?
+
+3. COZY AESTHETIC CHECK:
+   - Colors are warm and inviting (not harsh or aggressive)?
+   - Sounds are gentle and pleasant (not jarring)?
+   - UI is clean and uncluttered?
+   - Overall feeling is relaxing to use?
+   - Visual style matches doodle/hand-drawn aesthetic?
+   - Khoswa-Kian orange/blue accents used tastefully?
+
+4. ANTI-PATTERN DETECTION:
+   Flag any of these violations:
+   ❌ Time pressure or countdown timers
+   ❌ Punishing failure states or consequences
+   ❌ Forced grinding or tedious repetition
+   ❌ Pay-to-win or gameplay advantages for money
+   ❌ Dark patterns (FOMO, manipulation, hidden costs)
+   ❌ Harsh sounds or flashing lights
+   ❌ Stressful mechanics or anxiety-inducing features
+
+5. MONETIZATION ETHICS (if applicable):
+   - Is it purely cosmetic or optional content expansion?
+   - Is it unnecessary for core experience enjoyment?
+   - Is pricing transparent and fair?
+   - Are there free alternatives available?
+   - No loot boxes or gambling mechanics?
+   - No predatory pricing or hidden costs?
+
+6. PROVIDE RECOMMENDATIONS:
+   - Specific improvements to enhance coziness
+   - Accessibility enhancements to consider
+   - UI/UX refinements for better flow
+   - Any stress-inducing elements to remove
+   - Code quality and maintainability notes
+
+7. COZINESS SCORE:
+   Provide a score from 1-10 where:
+   1-3: Needs significant work to align with cozy principles
+   4-6: Generally okay but has notable issues
+   7-8: Good, minor improvements suggested
+   9-10: Excellent, fully embodies cozy game design
+
+Include specific, actionable feedback with code examples where applicable.

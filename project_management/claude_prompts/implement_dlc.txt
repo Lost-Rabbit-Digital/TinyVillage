@@ -1,0 +1,57 @@
+PROMPT: Implement DLC Content for Tiny Village
+
+Help me implement DLC functionality for Tiny Village following our ethical F2P model. Follow these steps:
+
+1. CLARIFY DLC SCOPE:
+   - DLC type: Story Chapter, Biome Expansion, Themed Building Set, or Seasonal?
+   - Complete content list (buildings, biomes, items, story elements)
+   - Pricing tier: $2.99, $4.99, $6.99, $9.99, or $12.99?
+   - How does it integrate with base game?
+   - What FREE alternatives exist to ensure fairness?
+
+2. DLC INFRASTRUCTURE (if not yet built):
+   - Create DLC detection/ownership system
+   - Implement content gating based on Steam ownership
+   - Add tasteful, non-intrusive "Get DLC" prompts
+   - Prepare Steam integration hooks
+   - Create local testing toggle for development
+   - Ensure graceful degradation if DLC not owned
+
+3. CONTENT IMPLEMENTATION:
+   - Create DLC-specific assets folder (keep organized)
+   - Implement new buildings/biomes/features
+   - Add unlock conditions and discovery mechanics
+   - Ensure multiplayer compatibility (host has DLC, guests can visit)
+   - Test that base game remains fully playable without DLC
+
+4. ETHICAL MONETIZATION VERIFICATION:
+   - ✓ Verify NO pay-to-win mechanics
+   - ✓ Base game remains complete and satisfying
+   - ✓ Prompts are tasteful, never naggy or manipulative
+   - ✓ Free alternatives exist for core gameplay mechanics
+   - ✓ Value proposition is clear and fair
+   - ✓ No loot boxes, energy systems, or dark patterns
+   - ✓ Pricing is transparent
+
+5. TESTING:
+   - Test with DLC enabled (full functionality)
+   - Test with DLC disabled (graceful degradation)
+   - Test multiplayer with mixed DLC ownership
+   - Verify pricing displays correctly
+   - Check Steam integration (when infrastructure ready)
+   - Performance testing with multiple DLCs loaded
+
+6. MARKETING MATERIALS:
+   - Create DLC description (honest, compelling)
+   - List all included content clearly
+   - Generate trailer storyboard or screenshots
+   - Price justification (hours of content, value)
+   - Steam store assets
+
+7. DOCUMENTATION:
+   - Update game design document with new DLC details
+   - Technical implementation notes
+   - Content manifests
+   - Testing procedures
+
+ALL DLC must follow ethical F2P principles outlined in project_management/project_direction/game_design_document.md monetization section.

@@ -1,0 +1,190 @@
+PROMPT: Generate Steam Store Page Content
+
+Help me create compelling Steam store page content for Tiny Village that honestly represents the game and appeals to the target audience. Follow these steps:
+
+1. REVIEW GAME DESIGN DOCUMENT:
+   - Read project_management/project_direction/game_design_document.md
+   - Note core pillars and unique selling points
+   - Understand target audience (cozy game fans)
+   - Check monetization model (F2P with ethical DLC)
+   - Review feature list and roadmap
+
+2. GENERATE SHORT DESCRIPTION (300 characters max):
+   Must include:
+   - Immediate hook for cozy game fans
+   - Mention "free-to-play" prominently
+   - Highlight unique Khoswa-Kian IP
+   - Key gameplay (village-building, creative)
+   - Tone: Warm, inviting, relaxing
+
+   Example structure:
+   "Build your cozy village with adorable Khoswa-Kian aliens in this FREE relaxing village simulator. Create, customize, and explore at your own pace. No stress, just creativity."
+
+3. ABOUT THIS GAME (long description):
+
+   OPENING PARAGRAPH:
+   - Engaging hook
+   - Core gameplay loop
+   - Why it's special
+
+   FEATURE LIST (bullets):
+   - Free-to-play base game (emphasize this)
+   - Core gameplay features
+   - Multiplayer co-op
+   - Creative freedom
+   - Cozy atmosphere
+   - Optional story content
+   - Regular updates
+
+   MONETIZATION TRANSPARENCY:
+   - Clear explanation of F2P model
+   - What's included for free (everything essential)
+   - What DLC offers (optional expansions)
+   - No pay-to-win statement
+   - Ethical approach emphasis
+
+   UNIQUE FEATURES:
+   - Khoswa-Kian lore and time-loop story
+   - Procedural generation
+   - Cozy aesthetic
+   - Accessibility options
+
+   SYSTEM REQUIREMENTS:
+   - From game design doc
+   - Emphasize low requirements
+
+4. KEY FEATURES LIST (5-8 bullets):
+   Focus on player benefits:
+   - ✓ Completely free-to-play - full game, no paywalls
+   - ✓ Relaxing village building with no fail states
+   - ✓ Co-op with friends (up to 4 players)
+   - ✓ Unique Khoswa-Kian alien civilization
+   - ✓ Procedural worlds with multiple biomes
+   - ✓ Hundreds of buildings and decorations
+   - ✓ Optional story with time-travel paradoxes
+   - ✓ Ethical DLC - only cosmetics and expansions
+
+5. VISUAL ASSET NEEDS:
+   List requirements:
+   - Header capsule: 460x215px
+   - Main capsule: 616x353px
+   - Small capsule: 231x87px
+   - Screenshots: 1920x1080 (5-10 showcasing features)
+   - Trailer: 60-90 seconds (storyboard)
+   - Logo variations: With/without text
+   - Background: For library
+
+   Screenshot priorities:
+   1. Cozy village overview
+   2. Building placement
+   3. Multiple biomes
+   4. Multiplayer co-op
+   5. Customization options
+   6. Khoswa-Kian characters
+   7. Weather/atmosphere
+   8. UI showcase
+
+6. TAGS & CATEGORIES:
+
+   PRIMARY TAGS:
+   - Casual
+   - Simulation
+   - City Builder
+   - Colony Sim
+   - Building
+   - Relaxing
+
+   SECONDARY TAGS:
+   - Free to Play
+   - Indie
+   - 2D
+   - Top-Down
+   - Cute
+   - Cozy
+
+   FEATURES:
+   - Online Co-Op
+   - Steam Cloud
+   - Steam Workshop (planned)
+   - Full Controller Support
+   - Steam Achievements
+
+7. FAQ FOR F2P CONCERNS:
+   Address common questions:
+
+   Q: Is this actually free?
+   A: [Honest, clear answer]
+
+   Q: What can I buy with real money?
+   A: [List DLC types, emphasize optional]
+
+   Q: Is it pay-to-win?
+   A: [Strong no, explain why]
+
+   Q: What's included in the free version?
+   A: [Complete list, emphasize "full game"]
+
+   Q: Why is it free?
+   A: [Explain sustainable F2P model]
+
+   Q: Will there be ads?
+   A: [No ads, ever]
+
+8. COMMUNITY FEATURES:
+   - Steam Workshop for custom content (future)
+   - Screenshot sharing
+   - Achievements
+   - Trading cards (future)
+   - Community hub
+   - Discussion forums
+   - Event announcements
+
+9. LOCALIZATION STRATEGY:
+
+   LAUNCH LANGUAGES:
+   - English (primary)
+
+   PRIORITY POST-LAUNCH:
+   - Spanish
+   - French
+   - German
+   - Portuguese (BR)
+   - Japanese
+   - Chinese (Simplified)
+
+   COMMUNITY TRANSLATIONS:
+   - Open to community help
+   - Credit translators
+   - UI text considerations
+
+10. MARKETING COPY GUIDELINES:
+
+    DO:
+    - Be honest and transparent
+    - Highlight cozy, relaxing gameplay
+    - Emphasize free-to-play generosity
+    - Showcase unique Khoswa-Kian IP
+    - Use warm, inviting language
+    - Focus on player experience
+
+    DON'T:
+    - Mislead about F2P model
+    - Oversell or exaggerate
+    - Use aggressive sales tactics
+    - Compare negatively to competitors
+    - Use anxiety-inducing language
+    - Hide DLC existence
+
+11. REVIEW CHECKLIST:
+    - [ ] Honest, not misleading
+    - [ ] Highlights cozy appeal clearly
+    - [ ] Transparent about F2P model
+    - [ ] Showcases unique Khoswa-Kian IP
+    - [ ] Appeals to target audience
+    - [ ] Professional presentation
+    - [ ] No grammatical errors
+    - [ ] Follows Steam guidelines
+    - [ ] Asset specifications met
+    - [ ] Tags appropriate
+
+Generate complete Steam store page content package ready for implementation, including all copy, asset specifications, and recommendations.
